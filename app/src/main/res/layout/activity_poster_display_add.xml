@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
+    android:layout_width="match_parent"
+    android:background="@color/black_transparent_80"
+    android:layout_height="match_parent"
+    tools:context=".main.dashotheractivity.posterdisplay.PosterDisplayAdd">
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/add_poster_display"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:text="@string/awareness_posters"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="@string/village"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"
+
+                    android:background="@drawable/edit_box"
+                    android:id="@+id/spin_village_name"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="@string/arogya_topic_posters"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"
+
+                    android:background="@drawable/edit_box"
+                    android:id="@+id/spin_topic"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:text="@string/no_of_participant_inposter"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="@string/select_week"/>
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:spinnerMode="dropdown"
+
+                        android:background="@drawable/edit_box"
+                        android:id="@+id/spin_week"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="@string/no_of_poster_diplay"
+                   />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:hint="5"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:background="@drawable/edit_box"
+                        android:id="@+id/et_no_of_poster"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="@string/total_presence"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:hint="5"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+
+                        android:background="@drawable/edit_box"
+                        android:id="@+id/et_total_present"/>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:text="@string/add_poster_display_photo"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_130sdp"
+                   android:orientation="horizontal"
+                   android:weightSum="3"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_marginBottom="@dimen/_10sdp">
+                   <RelativeLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="2"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:id="@+id/previous"
+                           android:layout_width="@dimen/_30sdp"
+                           android:layout_height="@dimen/_45sdp"
+                           android:layout_alignParentLeft="true"
+                           android:layout_centerVertical="true"
+                           android:src="@drawable/mdtp_ic_chevron_left_black_24dp"
+                           android:tint="@color/black"
+                           android:visibility="visible"/>
+
+                       <ImageView
+                           android:id="@+id/images"
+                           android:layout_width="@dimen/_100sdp"
+                           android:layout_height="@dimen/_120sdp"
+                           android:layout_centerInParent="true"
+                           android:src="@drawable/add_image" />
+
+
+                       <ImageView
+                           android:id="@+id/next"
+                           android:layout_width="@dimen/_30sdp"
+                           android:layout_height="@dimen/_45sdp"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                           android:layout_gravity="center_vertical"
+                           android:src="@drawable/ic_right_arrow"
+                           android:tint="@color/black"
+                           android:visibility="visible"/>
+                       <ImageView
+                           android:id="@+id/list_Image_delete"
+                           android:layout_width="@dimen/_24sdp"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="top"
+                           android:layout_marginStart="-20dp"
+                           android:layout_toEndOf="@+id/images"
+                           android:src="@drawable/ic_baseline_delete_forever_24" />
+
+                   </RelativeLayout>
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_gravity="center_vertical"
+                       android:layout_height="@dimen/_50sdp"
+                       android:src="@drawable/add_image"
+                       android:id="@+id/addImage"/>
+
+               </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/green_button"
+                    android:layout_margin="@dimen/_30sdp"
+                    android:textColor="@color/white"
+                    android:text="@string/submit"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,523 @@
+<resources>
+    <string name="app_name">Ekal Arogya</string>
+    <string name="no_internet_connection">Please enable data or wifi connection.</string>
+
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+    <string name="didn_t_received_otp">Didn\'t received OTP? Resend</string>
+    <string name="login_failed_message">Failed to do login. Please try again.</string>
+    <string name="resend_in">Resend in %02d sec</string>
+    <string name="resend_otp_failed">Failed to send otp again. Please try again.</string>
+
+    <string name="no_address_found">The geocoder can\'t find an address for the given latitude/longitude.</string>
+    <string name="invalid_lat_long_used">The latitude and/or longitude values that are provided in the Location object are invalid.</string>
+    <string name="address_found">Address found successfully.</string>
+    <string name="service_not_available">Service is not available.</string>
+
+    <string name="rate_app_title">Rate App</string>
+    <string name="rate_app_message">If you are enjoying our app, please take a moment to rate it on PlayStore. Thanks for your support!</string>
+    <string name="rate_btn_pos">Rate Now</string>
+    <string name="rate_btn_neg">Remind me later</string>
+    <string name="rate_btn_nut">No, Thanks</string>
+    <integer-array name="swipe_refresh_color_scheme_array">
+        <item>@color/colorPrimary</item>
+        <item>@color/red</item>
+        <item>@color/yellow</item>
+        <item>@color/black</item>
+        <item>@color/orange</item>
+        <item>@color/indigo</item>
+        <item>@color/teal</item>
+    </integer-array>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="app_url">http://arogya.ekaltech.com/</string>
+    <string name="otp_mobile_message">Please wait. You should recieve a SMS code on your number +91- %s</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="select_language">Select Language</string>
+    <string name="please_select_a_language_that_you_can_read_and_understand_comfortably">Please select a language that you can read and understand comfortably</string>
+    <string name="family_id">Family Id</string>
+    <string name="family_head">Family Head</string>
+    <string name="total_members">Total Members</string>
+    <string name="village_family">Village Family</string>
+    <string name="add">Add</string>
+    <string name="add_village_family">Add Village Family</string>
+    <string name="view_village_family">View Village Family</string>
+    <string name="update_village_family">Update Village Family</string>
+    <string name="family_verification_detail">Family Verification Detail</string>
+    <string name="head_of_family_detail">Head of Family detail</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="occupation">Occupation</string>
+    <string name="address">Address</string>
+    <string name="add_geo_location">Add Geo Location</string>
+    <string name="adhar">Aadhar</string>
+    <string name="family_members">Family Members</string>
+    <string name="relation">Relation</string>
+    <string name="married">Married</string>
+    <string name="personal_hygiene">Personal Hygiene</string>
+    <string name="social_sanitation">Social Sanitation</string>
+    <string name="preventive">Preventive</string>
+    <string name="id">Id</string>
+    <string name="date">Date</string>
+    <string name="children_name">Children Name</string>
+    <string name="hygiene_checkup">Hygiene Checkup</string>
+
+    <string name="inspection_date">Inspection Date</string>
+    <string name="fill_hygiene_checkup_detailes">Fill Hygiene Checkup Details</string>
+    <string name="nail_checkup">Nails Checkup</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="health_checkup">Health Checkup</string>
+    <string name="disease_prevention">Disease Prevention</string>
+    <string name="village">Village</string>
+    <string name="awareness">Awareness</string>
+    <string name="total_presence">Total Presence</string>
+    <string name="subject_of_disease_prevention_awareness">Subject of Disease Prevention Awareness</string>
+    <string name="village_name">Village Name</string>
+    <string name="presence">Presence</string>
+    <string name="malnutrition">Malnutrition</string>
+    <string name="amenia_in_pregnancy">Anemia \nCheckup</string>
+    <string name="malnutrition_checkup">Malnutrition Checkup</string>
+    <string name="anemia_control_program">Anemia Control Program</string>
+    <string name="name">Name</string>
+    <string name="pregnant">Pregnant</string>
+    <string name="anemic">Anemic</string>
+    <string name="anemic_test">Anemia Test</string>
+    <string name="anemic_type">Anemia type</string>
+    <string name="anemia_test">Anemia Test</string>
+    <string name="mid_arm_measurement">Mid-arm measurement</string>
+    <string name="mulnourished">Malnourished</string>
+    <string name="herbal_remedies">Herbal Remedies</string>
+    <string name="ayurvedic_treatment">Ayurvedic Treatment</string>
+    <string name="medicine_garden">Medicine Garden</string>
+    <string name="medicine_preparation">Medicine Preparation</string>
+    <string name="ayurvedic_treatments">Ayurvedic Treatments</string>
+    <string name="month">Month</string>
+    <string name="treatment">Treatment</string>
+    <string name="total_patient">Total Patient</string>
+    <string name="total_cured">Total Cured</string>
+    <string name="children">Children</string>
+    <string name="emergency_handling">Emergency Handling</string>
+    <string name="first_aid">First Aid</string>
+    <string name="emergency_training">Emergency Training</string>
+    <string name="emergency_response_training">Emergency Response Training</string>
+    <string name="eye_checkup">Eye Checkup</string>
+    <string name="eye_screening">Eye Screening</string>
+    <string name="eye_van">Eye Van</string>
+    <string name="search">Search</string>
+    <string name="family">Family</string>
+    <string name="social_sanitation_fill">Fill social sanitisation details</string>
+    <string name="compostpit">Compost Pit</string>
+    <string name="toilet">Toilet</string>
+    <string name="waterTreatment">Water Filter</string>
+    <string name="program_date">Program Date  </string>
+    <string name="malnurished">Malnurished</string>
+    <string name="van_aushadhi">Van \nAushadhi</string>
+    <string name="vanaushadhi">Van Aushadhi</string>
+    <string name="pateint_name">Patient Name</string>
+    <string name="recovery_status">Recovery Status</string>
+    <string name="problem">Problem</string>
+    <string name="prescription">Remedies</string>
+    <string name="samiti_meeting">Samiti Meeting</string>
+    <string name="no_of_presence">No. of presence</string>
+    <string name="add_samiti_meeting">Add Samiti Details</string>
+    <string name="poster_display">Poster Display</string>
+    <string name="week">Week</string>
+    <string name="add_poster_display">Arogya Poster Display</string>
+    <string name="arogya_topic_posters">Arogya Poster Topic</string>
+    <string name="select_week">Select Week</string>
+    <string name="no_of_poster_diplay">No. of Arogya Posters Display</string>
+    <string name="purpose">Purpose</string>
+    <string name="village_visit">Village Visit</string>
+    <string name="village_visit_add">Village Visit</string>
+    <string name="total_doctor">Total Doctor</string>
+    <string name="arogya_camp">Arogya Camp</string>
+    <string name="program">Program</string>
+    <string name="jagran_program">Jagaran Program</string>
+    <string name="inspection_stay_add">Inspection Stay</string>
+    <string name="inspection_subject">Subject of Inspection</string>
+    <string name="dob">DOB</string>
+    <string name="cancel">Cancel</string>
+    <string name="power">Power</string>
+    <string name="use">Use</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+    <string name="sph">Sph</string>
+    <string name="cyl">Cyl</string>
+    <string name="axis">Axis</string>
+    <string name="issue_glasses">Issue Glasses</string>
+    <string name="issue_medic">Prescribe Medicine</string>
+    <string name="fee">Fee</string>
+    <string name="reffered_to">Referred to</string>
+    <string name="absent">Absent</string>
+    <string name="camera_not_supported">Camera Not Supported</string>
+    <string name="present">Present</string>
+    <string name="storage_permission_required">Permission Required</string>
+    <string name="storage_permission_deny">deny</string>
+    <string name="all_permission_required">All permission required</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="mid_arm">
+        <item>12-13</item>
+        <item>13-14</item>
+        <item>14-15</item>
+    </string-array>
+    <string-array name="weak_list">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+    </string-array>
+    <string-array name="treat_option">
+        <item>Select</item>
+        <item>Cured</item>
+        <item>Not Cured</item>
+        <item>Referred</item>
+    </string-array>
+    <string-array name="progress">
+        <item>Select</item>
+        <item>All</item>
+        <item>Not Started</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+    </string-array>
+    <string-array name="months_array">
+        <item>Select Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="arogya_topic">
+        <item>Health awareness</item>
+        <item>Routine</item>
+    </string-array>
+
+    <string name="app_version">App Version : %</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="reset">Reset</string>
+    <string name="home">Home</string>
+    <string name="task_list">Task List</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="mobile_no_option">Mobile no. (Optional)</string>
+
+
+    <string name="select_image">Select Image</string>
+    <string name="select_from_gallary">Select from gallery</string>
+    <string name="capture_from_camera">Capture from camera</string>
+    <string name="status">Status</string>
+    <string name="you">You</string>
+    <string name="support">Support</string>
+    <string name="add_support_ticket">Add Ekal Problem</string>
+    <string name="detail_support_ticket">Problem Details</string>
+    <string name="sanch_coordinator">Sanch Coordinator</string>
+    <string name="no_data">No data!</string>
+    <string name="_month">Month</string>
+    <string name="medicine_plants">Medicinal Plants</string>
+    <string name="plantation">Plantation</string>
+    <string name="arogya_camp_month">Arogya Camp Month</string>
+    <string name="no_of_pat">No. of patient</string>
+    <string name="jagaran_awaking_program">Jagaran Awakening Program</string>
+    <string name="village_namee">Village Name</string>
+    <string name="fill_in_each">Program</string>
+    <string name="health_jagaran_rally">Health Jagran Rally</string>
+    <string name="soak_pit">Soak Pit</string>
+    <string name="waste_pit">Waste Pit</string>
+    <string name="nails_health">Nail and Health</string>
+    <string name="plz_add_family">Please add family</string>
+    <string name="family_head_namr">Family Head Name</string>
+    <string name="member_name">Member Name</string>
+    <string name="age_">Age :</string>
+    <string name="add_arogya_camp_pic">Add Arogya Camp Photos</string>
+    <string name="adults">Adults</string>
+    <string name="awareness_posters">Awareness Arogya Posters</string>
+    <string name="add_poster_display_photo">Add Poster Display Photos</string>
+    <string name="arogya_villg_samiti_meeting">Arogya Village Samiti\nMeeting</string>
+    <string name="arogya_maitii">Arogya Samiti</string>
+    <string name="arogya_samiti">Arogya Sevika</string>
+    <string name="arogya_sevavriti">Arogya Sevavriti</string>
+    <string name="anshu_gupta">Anshu Gupta</string>
+    <string name="boys">Boys</string>
+    <string name="ballia">Ballia</string>
+    <string name="cleanliness">Cleanliness</string>
+    <string name="child_saftey">Child Safety</string>
+    <string name="cuts">Cuts</string>
+    <string name="create_ticket">Submit</string>
+    <string name="camp_date">Camp Date</string>
+    <string name="ctaract">Cataract</string>
+    <string name="continuee">Continue</string>
+    <string name="cured">Cured</string>
+    <string name="closed">Closed</string>
+    <string name="conversation">Conversation</string>
+    <string name="cleanliness_maleria_nutritions_vaccination">Cleanliness,maleria,Nutritions, Vaccination</string>
+    <string name="chhata">Chhata</string>
+    <string name="cut_heart_attack_snake_bite">Cut, Heart Attack,snake bite</string>
+    <string name="dateE">Date</string>
+    <string name="distance">Distance :</string>
+
+    <string name="edit">Edit</string>
+    <string name="eye_infect">Eye Infection</string>
+    <string name="emegency_resp_trainig">Emergency Response Training</string>
+    <string name="every_month_3_jagran_program">Every month 3 Jagran program</string>
+    <string name="filter">Filter Uses</string>
+    <string name="family_contact_50_per_month">Family contact 50 per month</string>
+    <string name="first">First</string>
+    <string name="empty_label">Empty Label</string>
+    <string name="girls">Girls</string>
+    <string name="govt_hopital">Govt Hospital</string>
+    <string name="head_name">Head Name</string>
+    <string name="heart_attack">Heart Attacks</string>
+    <string name="householder">Householder</string>
+    <string name="health">Health</string>
+    <string name="health_village_soakpit_water_treatment">Health, village, soakpit,water treatment</string>
+    <string name="infection_error">Infection Error</string>
+    <string name="incident_record_keeping">Incident record keeping</string>
+    <string name="inspect_date">Inspection date</string>
+    <string name="incident_recordkeeping">Incident record keeping</string>
+    <string name="in_progress">In Progress</string>
+    <string name="jagaran_topic_1">Jagaran Topic 1</string>
+    <string name="kids">Kids</string>
+    <string name="kacha_pakka_soakpit_compost_pit">Kacha/Pakka, Soakpit,Compost Pit,</string>
+    <string name="login">Login</string>
+    <string name="maleria">Malaria</string>
+    <string name="maternal_saftey">Maternal Safety</string>
+    <string name="mild">Mild</string>
+    <string name="moderate">Moderate</string>
+    <string name="medicine_patation">Medicine Plantation</string>
+    <string name="missing_date">Meeting Date :</string>
+    <string name="mideinal_palnts">Medicinal Plants</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="no_of_fam">No. of Family</string>
+    <string name="no_of_male">No. of Male</string>
+    <string name="no_of_female">No. of Female</string>
+    <string name="no_of_child">No. of Children</string>
+    <string name="new_ticket">New Problem</string>
+    <string name="no_of_doc">No. of Doctor</string>
+    <string name="no_of_people_use_toilet">No. of People Use Toilet</string>
+    <string name="nutrition_plantation">Nutrition Plantation</string>
+    <string name="not_cured">Not Cured</string>
+    <string name="no_of_participant_inposter">No. of Participants in\nPoster Awareness program</string>
+    <string name="night_stay">Night Stay</string>
+    <string name="otp">OTP</string>
+    <string name="open">Open</string>
+    <string name="purpose_of_visit">Purpose of Visit</string>
+    <string name="privat_hospital">Private Hospital</string>
+    <string name="plz_add_famil">Please add family</string>
+    <string name="prblem">Problem</string>
+    <string name="plz_add_child">Please add child</string>
+    <string name="plz_add_chil">Please add child</string>
+    <string name="plz_add_fami">Please add family</string>
+    <string name="pat_name">Patient Name</string>
+    <string name="prscription">Prescription</string>
+    <string name="poster_display_four_days_a_month_per_week">Poster display Four days a month per week</string>
+    <string name="plantation_of_vanaushadhi_samplings_per_family">Plantation of Vanaushadhi samplings per family</string>
+    <string name="rajni">Rajni</string>
+    <string name="result">Result</string>
+    <string name="refreed">Referred</string>
+    <string name="remark">Remark</string>
+    <string name="reading_">Reading :</string>
+    <string name="refraction_errro">Refraction Error</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="reply_ticket">Reply</string>
+    <string name="mob_verification">Mobile Verfication</string>
+    <string name="mob_no">Mobile no</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="snake_bite">Snake Bites</string>
+    <string name="sevre">Severe</string>
+    <string name="sanyojika_na">Sanyojika Name/Sanch Coordinator</string>
+    <string name="sanyojak_sonyojika">Sanyojak/Sanyojika</string>
+    <string name="subj">Subject</string>
+    <string name="select">Select</string>
+    <string name="select_your_year">Select Your Year</string>
+    <string name="select_village">Select Village</string>
+    <string name="start_date">Start Date</string>
+    <string name="testing">Testing</string>
+    <string name="treament_type">Treatment Type</string>
+    <string name="trainig_of_various_record">Training of various record</string>
+    <string name="ticket_support">Ekal Support</string>
+    <!--    <string name="ticket_desc">Problem Description</string>-->
+    <string name="file_3_mb">The file size should not be more then 3 MB</string>
+    <string name="test">Test</string>
+    <string name="total">Total</string>
+    <string name="treatment_type">Treatment Type</string>
+    <string name="total_cured_pat">Total Cured Patient</string>
+    <string name="tarining_for_various">Training for various kinds</string>
+    <string name="tree_planting">Tree Planting</string>
+    <string name="testt">Test</string>
+    <string name="total_member_meeting">Total members in Meeting</string>
+    <string name="ticket_info">Problem Information</string>
+    <string name="tck_id">Problem ID</string>
+    <string name="this_month">This Month</string>
+    <string name="till_date">Till date</string>
+    <string name="upload_photo">Upload Image</string>
+    <string name="unconsc">Unconscious</string>
+    <string name="vidhalaya_contact_ekal_vidhalaya_4_days_other_vidhalaya_4_days">Vidhalaya contact Ekal Vidhalaya 4 days, Other vidhalaya 4 days</string>
+    <string name="vaccination">Vaccination</string>
+    <string name="vision_defect">Vision defect</string>
+    <string name="village_visit_details">Village visit details</string>
+    <string name="vilage_visit">Village Visit</string>
+    <string name="vidyalay_visit">Vidyalay Visit</string>
+    <string name="warni_massg">Warning : Please note that only once you can check-in and check-out per day.</string>
+    <string name="wall_writing">Wall Writing</string>
+    <string name="we_will_send_otp_mssg">We will send you one time\npassword (OTP)</string>
+    <string name="o_rs">0.00 Rs.</string>
+    <string name="total_member_count">Total Member Counts</string>
+    <string name="mobno">Phone number</string>
+    <string name="no_prev_img">No previous image</string>
+    <string name="last_image">Last Image Already Shown</string>
+    <string name="continues">Continue</string>
+
+    <string name="select_your_preferred_language">Select Language</string>
+    <string name="language_preference_message">Please select a language that you can read and understand completely</string>
+    <string name="change_language">Change Language</string>
+
+
+
+    <string name="tckw">T  -  Toilets \nC  -  Compost Pit \nS  -  Kaccha/Pakka Soakpit \nW  -  Water Treatment</string>
+
+
+    <string name="village_list">Village List</string>
+
+    <string name="disease_prevention_list">Disease Prevention List</string>
+    <string name="ayurvedic_treatment_list">Ayurvedic Treatment List</string>
+    <string name="samiti_meeting_list">Samiti Meeting List</string>
+    <string name="search_coordinator">Search Coordinator</string>
+    <string name="village_visit_list">Village Visit List</string>
+    <string name="arogya_camp_list">Arogya Camp list</string>
+    <string name="referred">Referred</string>
+    <string name="inspection_stay_list">Inspection Stay List</string>
+    <string name="update_owner">Update owner details</string>
+    <string name="add_owner_details">Add owner details</string>
+
+    <string name="personal_hygiene_list">Personal Hygiene List</string>
+    <string name="social_sanitation_list">Social Sanitation List</string>
+    <string name="panchva">Panchva</string>
+    <string name="family_list">Family List</string>
+    <string name="malnutrition_checkup_list">Malnutrition Checkup List</string>
+    <string name="malnutrition_checkup_result">Malnutrition Checkup Result</string>
+    <string name="first_aid_list">First Aid List</string>
+    <string name="eye_van_list">Eye Van List</string>
+    <string name="eye_screen_list">Eye Screen List</string>
+    <string name="view_eye_screen">View Eye Screen</string>
+    <string name="view_samiti_details">View Samiti Details</string>
+    <string name="update_samiti_details">Update Samiti Details</string>
+    <string name="update_animea">Anemia Checkup Update</string>
+    <string name="add_member">Add member</string>
+
+
+    <string name="language">Language</string>
+    <string name="dash1">Village &amp; Family</string>
+    <string name="dash2">Preventive</string>
+    <string name="dash3">Disease Prevention</string>
+    <string name="dash4">Malnutrition</string>
+    <string name="dash5">Herbal Remedies</string>
+    <string name="dash6">First Aid</string>
+    <string name="dash7">Eye Van</string>
+    <string name="dash8">Samiti Meeting</string>
+    <string name="dash9">Poster Display</string>
+    <string name="dash10">Village Visit</string>
+    <string name="dash11">Arogya Camp</string>
+    <string name="dash12">Jagran Program</string>
+    <string name="dash13">Inspection Day</string>
+    <string name="title">Title </string>
+    <string name="ticket_desc">Any problem (please mention)</string>
+    <string name="animea_checkup_list">Anemia Checkup List</string>
+
+    <string name="children_list">Children List</string>
+    <string name="family_children_list">Family Children List</string>
+    <string name="personal_hygeine_list">Personal Hygiene List</string>
+    <string name="malnutrition_checkup_add">Malnutrition Checkup Add</string>
+    <string name="malnutrition_checkup_head">Malnutrition Checkup Head</string>
+    <string name="malnutrition_checkup_member">Malnutrition Checkup Member</string>
+    <string name="enter_date">Please enter date</string>
+    <string name="choose_malnutrition_yes_no">Choose malnutrition checkup yes/no</string>
+    <string name="plz_select_mid_arm">Please select mid arm measurement</string>
+    <string name="women_list">Women List</string>
+    <string name="ayurvedic_treat_list">Ayurvedic Treatment List</string>
+    <string name="medicine_garden_list">Medicine Garden List</string>
+    <string name="add_some_plant">Add some plants</string>
+    <string name="add_plant_count">Add  plants  counts</string>
+    <string name="add_plant_images">Add some plants images</string>
+    <string name="disposal_of_water">Kaccha/Pakka Soakpit</string>
+    <string name="other">Other</string>
+    <string name="guest">Guest</string>
+    <string name="add_image">Add Image</string>
+    <string name="plz_mark_attendace_first">Mark your attendance first !</string>
+    <string name="sevavriti">Sevavriti</string>
+    <string name="plz_wait_you_shuold">Please wait.\nYou should have received an SMS code on your number \n+91</string>
+    <string name="task_details">Task Details</string>
+    <string name="no_child_found">No member found for \nthe selected family.</string>
+    <string name="sanch_name">Sanch name</string>
+    <string name="count">Count</string>
+    <string name="gkv_report">GKV Report</string>
+    <string name="try_again">Please try again.</string>
+    <string name="opps_try_again">Oops!! Unknown error occurred. Please try again.</string>
+    <string name="complete">Complete</string>
+    <string name="not_complete">Not Complete</string>
+    <string name="pateint_type">Patient Type</string>
+    <string name="member">Member</string>
+
+    <string name="wall_write">Wall Writing</string>
+    <string name="filterUses">Filter Usage</string>
+    <string name="task_id">Task ID :</string>
+    <string name="view">View</string>
+    <string name="eye_screen">"Eye Screen "</string>
+    <string name="add_eye_screening">Add Eye Screening</string>
+    <string name="view_member">View Member</string>
+    <string name="end_date">End Date</string>
+    <string name="health_clean_rally">Health and cleanliness Jagran Rally</string>
+
+    <string name="select_vision_defect">Select vision defect</string>
+    <string name="language_changed_success">Language changed successfully.</string>
+    <string name="failed_slect_language">Failed to change language. Please try again.</string>
+    <string name="enter_ticket_name">Please enter ticket name</string>
+    <string name="enter_ticket_remark">Please enter ticket remark</string>
+    <string name="logout_mmsg">Are you sure you want to close this app?</string>
+    <string name="close">Close</string>
+    <string name="second">Second</string>
+    <string name="download">Downloaded</string>
+    <string name="id_not_found">ID not found!</string>
+    <string name="plz_complete_form">Please fill complete form</string>
+    <string name="gender_choose">Choose gender!</string>
+    <string name="marital_status_choose">Select marital status</string>
+    <string name="relation_choose">Select relation</string>
+    <string name="occupation_choose">Select occupation</string>
+    <string name="no_capture_image">No Image Capture!</string>
+    <string name="fill_detail">Please fill details</string>
+    <string name="search_box_empty">Search box empty</string>
+    <string name="cured_no">no. of cured patient</string>
+    <string name="input_grade">Input Grade : A / B / C</string>
+    <string name="select_topic">Select Topic!</string>
+    <string name="login_success">Login Success</string>
+    <string name="otp_reneter">Please enter valid OTP.</string>
+
+    <string name="family_visit">Family Visit</string>
+    <string name="family_visit_count">Family visit data</string>
+    <string name="toilet_usage_awrness">Toilet usage awareness</string>
+    <string name="inspection_report">Inspection Report</string>
+
+
+</resources>

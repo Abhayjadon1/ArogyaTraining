@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.dashotheractivity.malnutrition.animea.AnemiaCheckup">
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_add"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/amenia_in_pregnancy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/green_button"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/add"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_1sdp"
+        android:layout_below="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llHead_anemia"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/id"
+                        android:gravity="center"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/date"
+                        android:gravity="center"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/name"
+                        android:gravity="center"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="vertical"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anemia_test"
+                            android:gravity="center"
+                            android:background="@color/colorPrimaryDark"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:visibility="gone">
+                            <TextView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="match_parent"
+                                android:text="@string/test"
+                                android:textColor="@color/white"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="match_parent"
+                                android:text="@string/result"
+                                android:textColor="@color/white"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llHead_vill"
+            android:weightSum="8"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/family_id"
+                        android:gravity="center"
+                        android:id="@+id/tv_list_id"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1sp"
+                    android:layout_marginStart="1sp">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/family_head"
+                        android:id="@+id/tv_list_name"
+                        android:gravity="center"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/total_members"
+                        android:gravity="center"
+                        android:id="@+id/tv_list_total"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/dashSwipeRefreshLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rv_anemia_checkup_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/row_anemia_in_pregnancy"
+            />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addMember"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent"
+    tools:context=".main.dashotheractivity.preventives.hygiene.PersonalHygineFamily">
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/family_list"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="4"
+       android:layout_margin="@dimen/_5sdp"
+       android:id="@+id/ll_search"
+       android:layout_below="@+id/ll_header">
+       <EditText
+           android:layout_width="0dp"
+           android:layout_weight="3"
+           android:layout_height="@dimen/_40sdp"
+           android:paddingTop="@dimen/_5sdp"
+           android:paddingBottom="@dimen/_5sdp"
+           android:backgroundTint="@color/light_black"
+           android:background="@drawable/edit_box"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:layout_marginLeft="@dimen/_5sdp"
+           android:gravity="center_vertical"
+           android:paddingLeft="@dimen/_10sdp"
+           android:id="@+id/search_src_text"
+           android:textColor="@color/white"
+           android:textColorHint="@color/white"
+           android:layout_below="@+id/ll_header"
+
+           android:hint="@string/search"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/_5sdp"
+           android:text="@string/search"
+           android:textColor="@color/white"
+           android:background="@drawable/edit_box"
+           android:backgroundTint="@color/blue"
+           android:layout_margin="@dimen/_5sdp"
+           android:layout_gravity="center_vertical"
+           android:id="@+id/search_btn"/>
+   </LinearLayout>
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/_15sdp"
+        android:text="@string/no_child_found"
+        android:gravity="center"
+        app:fontFamily="@font/sf_pro_display_regular"
+        android:textColor="@color/gunmetal"/>
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:contentPadding="@dimen/_10sdp"
+        android:id="@+id/cardRv"
+        android:visibility="visible"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/dashSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_family_list_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/row_member"
+                android:background="@color/black"/>
+        </RelativeLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:text="@string/plz_add_chil"/>
+</RelativeLayout>

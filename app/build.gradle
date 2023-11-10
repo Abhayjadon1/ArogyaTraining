@@ -1,0 +1,261 @@
+//buildscript {
+////    repositories {
+////        maven { url 'https://maven.fabric.io/public' }
+////    }
+//
+//    dependencies {
+//        // These docs use an open ended version so that our plugin
+//        // can be updated quickly in response to Android tooling updates
+//
+//        // We recommend changing it to the latest version from our changelog:
+//        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+//        classpath 'io.fabric.tools:gradle:1.+'
+//    }
+//}
+apply plugin: 'com.android.application'
+//apply plugin: 'io.fabric'
+apply plugin: 'com.google.firebase.crashlytics' // add this line at top
+
+apply plugin: 'com.google.gms.google-services'
+
+//repositories {
+//    maven { url 'https://maven.fabric.io/public' }
+//}
+
+android {
+//    def fabricAPIKey = project.findProperty("FABRIC_API_KEY")
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    signingConfigs {
+        release {
+            storeFile file('ekal_arogya.jks')
+            storePassword '!nvent@2025'
+            keyPassword '!nvent@2025'
+            keyAlias = 'ekal_arogya'
+        }
+    }
+    defaultConfig {
+        applicationId "com.inventics.ekalarogya.training"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        def filesAuthorityValue = applicationId + ".file_provider"
+        buildConfigField("String", "FILES_AUTHORITY", "\"${filesAuthorityValue}\"")
+
+        resValue "string", "google_maps_key", getGoogleMapAPIKey()
+
+        buildConfigField 'String', 'STAGING_END_POINT', (project.findProperty("STAGING_END_POINT") ?: "")
+        buildConfigField 'String', 'PROD_END_POINT', (project.findProperty("PROD_END_POINT") ?: "")
+        buildConfigField 'String', 'HELP_URL_SUPPORT', (project.findProperty("HELP_URL_SUPPORT") ?: "")
+        buildConfigField 'String', 'HELP_IMG_SUPPORT', (project.findProperty("HELP_IMG_SUPPORT") ?: "")
+
+        buildConfigField 'String', 'API_KEY', (project.findProperty("API_KEY") ?: "")
+        buildConfigField 'String', 'GOOGLE_MAPS_API_KEY_1', (project.findProperty("GOOGLE_MAPS_API_KEY_1") ?: "")
+        buildConfigField 'String', 'GOOGLE_MAPS_API_KEY_2', (project.findProperty("GOOGLE_MAPS_API_KEY_2") ?: "")
+
+//        buildConfigField 'String', 'MID', (project.findProperty("MID") ?: "")
+//        buildConfigField 'String', 'CHANNEL_ID', (project.findProperty("CHANNEL_ID") ?: "")
+//        buildConfigField 'String', 'WEBSITE', (project.findProperty("WEBSITE") ?: "")
+//        buildConfigField 'String', 'INDUSTRY_TYPE_ID', (project.findProperty("INDUSTRY_TYPE_ID") ?: "")
+//        buildConfigField 'String', 'MERCHANT_KEY', (project.findProperty("MERCHANT_KEY") ?: "")
+//        buildConfigField 'String', 'TRANSACTION_URL', (project.findProperty("TRANSACTION_URL") ?: "")
+
+        // manifestPlaceholders = [fabric_io_id: fabricAPIKey]
+
+//        ndk {
+//            abiFilters "armeabi", "armeabi-v7a", "x86"
+//        }
+    }
+    // Configure only for each module that uses Java 8
+    // language features (either in its source code or
+    // through dependencies).
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            versionNameSuffix ".debug"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    lint {
+        checkReleaseBuilds false
+    }
+    namespace 'com.inventics.ekalarogya.training'
+//    buildFeatures {
+//        viewBinding  true
+//    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def appName = "Arogya _"
+            def date = new Date()
+            def formattedDate = date.format('dd-MMM-yyyy')
+//            outputFileName = appName + "_" + formattedDate + "_" + "-${variant.versionName}.apk"
+
+            outputFileName = appName +"_"+ formattedDate+"_"+ "-${variant.versionName}_${variant.versionCode}.apk"
+        }
+
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+        density {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+        abi {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha05'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //multidex for above 64k method in app
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+//    implementation 'com.google.mlkit:translate:16.1.1'
+//    implementation 'com.github.tbruyelle:rxpermissions:0.10.1'
+//    implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+    //Retrofit Dependency
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+
+    //GSON Dependency
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //Logging interceptor Dependency
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
+    //Butter knife Dependency
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+
+    //firebase
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-config:16.1.0'
+
+    //Circle Image View
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    //Glide Dependency
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+//    //paytm pg
+//    implementation('com.paytm:pgplussdk:1.3.3') {
+//        transitive = true;
+//    }
+    //all in one
+//    implementation "com.paytm.nativesdk:core-wr:1.2.2"
+
+    //Google Play services dependency
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-base:16.1.0'
+    implementation 'com.google.android.gms:play-services-places:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+
+    //calligraphy
+//    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+//    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+
+//    //fabric crashlytics
+//    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+//        transitive = true;
+//    }
+    implementation 'com.karumi:dexter:6.2.3'
+
+    implementation group: 'com.google.firebase', name: 'firebase-crashlytics', version: '18.2.13'
+
+    implementation 'com.wdullaer:materialdatetimepicker:3.6.4'
+
+//    implementation 'com.google.android.play:core:1.10.2'//for new version updater
+    implementation 'com.google.android.play:app-update:2.0.1'
+
+    //app review
+//    implementation 'com.google.android.play:core:1.8.0'
+    implementation 'com.google.android.play:review:2.0.1'
+
+
+    // optional material library to show the fallback rate us dialog
+    implementation "com.google.android.material:material:1.3.0-alpha02"
+
+
+}
+
+/**
+ * method to generate version code
+ * @return version code
+ */
+private Integer generateVersionCode() {
+    return 1 * 10000000 + rootProject.ext.versionMajor * 10000 + rootProject.ext.versionMinor * 100 + rootProject.ext.versionPatch
+//    return rootProject.ext.minSdkVersion * 10000000 + rootProject.ext.versionMajor * 10000 + rootProject.ext.versionMinor * 100 + rootProject.ext.versionPatch
+}
+
+/**
+ * method to generate version name
+ * @return version name
+ */
+private String generateVersionName() {
+    String versionName = "${rootProject.ext.versionMajor}.${rootProject.ext.versionMinor}.${rootProject.ext.versionPatch}"
+    if (rootProject.ext.versionClassifier == null) {
+        if (rootProject.ext.isSnapshot) {
+            rootProject.ext.versionClassifier = "SNAPSHOT"
+        }
+    }
+
+    if (rootProject.ext.versionClassifier != null) {
+        versionName += "-" + rootProject.ext.versionClassifier
+    }
+    return versionName;
+}
+
+/**
+ * method to generate google map api key
+ * @return original google map api
+ */
+private String getGoogleMapAPIKey() {
+    String mapAPIKey1 = project.findProperty("GOOGLE_MAPS_API_KEY_1");
+    String mapAPIKey2 = project.findProperty("GOOGLE_MAPS_API_KEY_2");
+    return mapAPIKey1.replace(":","")+mapAPIKey2.replace(":","");
+}
+

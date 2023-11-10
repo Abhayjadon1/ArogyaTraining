@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent_80"
+    tools:context=".main.dashotheractivity.villagevisit.VillageVisit">
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/village_visit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_1sdp"
+        android:layout_below="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llVillage_visit"
+            android:weightSum="8"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/date"
+                        android:gravity="center"
+                        android:id="@+id/tv_list_id"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1sp"
+                    android:layout_marginStart="1sp">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/village"
+                        android:id="@+id/tv_village"
+                        android:gravity="center"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="@string/purpose"
+                        android:gravity="center"
+                        android:id="@+id/purpose"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/dashSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rv_villageVisit_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/row_village_visit"
+                />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addMember"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/white" />
+</RelativeLayout>

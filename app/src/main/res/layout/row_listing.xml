@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/llBody"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_30sdp"
+                android:text=""
+                android:id="@+id/tv_id"
+                android:singleLine="true"
+                android:gravity="center"
+                android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_30sdp"
+                android:text=""
+                android:id="@+id/tv_name"
+                android:singleLine="true"
+                android:gravity="center"
+                android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_30sdp"
+                android:text=""
+                android:id="@+id/tv_total"
+                android:singleLine="true"
+                android:gravity="center"
+                android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+
+</RelativeLayout>

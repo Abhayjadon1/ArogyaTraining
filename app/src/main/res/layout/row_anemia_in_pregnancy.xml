@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:padding="@dimen/_3sdp"
+            android:singleLine="true"
+            android:text="999"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:singleLine="true"
+            android:text="18/07/2022"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Rajni"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_anemic"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/yes "
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/tv_anemia_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+            <ImageView
+                android:id="@+id/editbtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/_10sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_edit"/>
+            <ImageView
+                android:id="@+id/viewbtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_visible"/>
+        </LinearLayout>
+
+    </TableRow>
+
+</RelativeLayout>

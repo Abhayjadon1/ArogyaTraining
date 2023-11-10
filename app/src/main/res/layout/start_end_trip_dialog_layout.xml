@@ -1,0 +1,95 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_layout_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/trip_dialog_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gunmetal"
+        android:textSize="20sp"
+        tools:text="@string/start_trip" />
+
+    <TextView
+        android:id="@+id/trip_dialog_start_trip_meter_reading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_dialog_label"
+        android:textColor="@color/gunmetal"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"
+        tools:text="Start Meter Reading : 8981289" />
+
+
+    <EditText
+        android:id="@+id/trip_meter_reading_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_dialog_start_trip_meter_reading_label"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_box"
+        android:digits="0123456789"
+        android:hint=""
+        android:imeOptions="actionDone"
+        android:inputType="numberSigned"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColor="@color/gunmetal"
+        android:textColorHint="@color/dark_grey"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/trip_meter_reading_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trip_meter_image_height"
+        android:layout_below="@+id/trip_meter_reading_input"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        tools:src="@mipmap/ic_launcher_round" />
+
+    <Button
+        android:id="@+id/trip_dialog_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_meter_reading_image_view"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_button"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/trip_dialog_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_meter_reading_image_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/trip_dialog_submit_button"
+        android:background="@drawable/green_button"
+        android:backgroundTint="@color/grey"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_dialog_label"
+        android:layout_marginTop="369dp"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        tools:text="@string/warni_massg" />
+
+
+</RelativeLayout>

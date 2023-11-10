@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent_80"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headercard"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auth_logo_size"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/white"
+                android:src="@drawable/arogya_vector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ekal_arogya" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginEnd="20sp"
+        android:paddingVertical="@dimen/_2sdp"
+        android:padding="10dp"
+        app:cardCornerRadius="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/black"
+            android:padding="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:padding="10sp"
+                android:text="@string/otp"
+                android:textColor="@color/quantum_white_text"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/otp__" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginEnd="20sp"
+                android:layout_marginStart="20sp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:text="@string/plz_wait_you_shuold"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+<!--                <com.inventics.ekalarogya.custom_views.OTPInputView-->
+<!--                    android:id="@+id/et_otp"-->
+<!--                    android:layout_marginTop="32dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:cursorVisible="false"-->
+<!--                    android:digits="1234567890"-->
+<!--                    android:imeOptions="actionDone"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLength="4"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:padding="16dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:textColor="@color/gunmetal"-->
+<!--                    android:textColorHint="@color/dark_grey"-->
+<!--                    android:textIsSelectable="false"-->
+<!--                    android:background="@drawable/edit_box"-->
+<!--                    android:textSize="16sp" />-->
+
+
+                <com.goodiebag.pinview.Pinview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:inputType="number"
+                    android:focusable="true"
+                    app:forceKeyboard="true"
+                    android:id="@+id/et_otp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/resendotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="@string/resend_otp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:background="@drawable/next"
+                android:gravity="center"
+                android:layout_margin="10sp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_1sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black_transparent_80"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/tvLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/namePlant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TulsiTest"
+                android:layout_margin="@dimen/_3sdp"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <CheckBox
+                android:id="@+id/pantCb"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/noPlant"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/edit_box"
+            android:backgroundTint="@color/black_transparent_80"
+            android:gravity="center"
+            android:hint="00"
+            android:inputType="number"
+            android:maxWidth="@dimen/_60sdp"
+            android:maxLength="3"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/addImage"
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_64sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/add_image" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,30 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:contentPadding="@dimen/_10sdp"
+    android:layout_below="@+id/ll_header"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_village"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/dilog_village_tv"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_village_list_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_member"
+        />
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+

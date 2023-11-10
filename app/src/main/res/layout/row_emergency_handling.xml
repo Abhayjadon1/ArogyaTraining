@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_village_Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:text="@string/chhata"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_emergency_training"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/cut_heart_attack_snake_bite"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_total_presense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+            android:padding="@dimen/_5sdp"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+    </TableRow>
+
+</RelativeLayout>

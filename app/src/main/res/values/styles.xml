@@ -1,0 +1,118 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+
+
+
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+        <item name="colorControlActivated">@color/green</item>
+<!--        <item name="colorControlNormal">@color/grey</item>-->
+        <item name="android:windowBackground">@color/background_grey</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+
+    </style>
+<!--    <style name="AppThemeSpalsh" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="android:windowDisablePreview">true</item>-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--        <item name="android:textColorSecondary">@color/gunmetal</item>-->
+<!--        <item name="actionMenuTextColor">@android:color/white</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="colorPrimary">@color/white</item>-->
+<!--        <item name="colorSecondary">@color/grey</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="fontFamily">@font/sf_pro_display_regular</item>-->
+<!--        <item name="colorControlActivated">@color/green</item>-->
+<!--        &lt;!&ndash;        <item name="colorControlNormal">@color/grey</item>&ndash;&gt;-->
+<!--        <item name="android:windowBackground">@color/background_grey</item>-->
+<!--        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/black</item>-->
+<!--        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>-->
+<!--        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/colorPrimaryDark</item>-->
+
+<!--    </style>-->
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@drawable/text_color_selector</item>
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+<!--    <style name="FullHeightDialog" parent="Base.Theme.AppCompat.Light.Dialog">-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+<!--        <item name="android:windowFrame">@null</item>-->
+<!--        <item name="android:windowFullscreen">false</item>-->
+<!--    </style>-->
+    <style name="DatePickerTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonBarPositiveButtonStyle" tools:targetApi="lollipop">@style/DatePickerTheme.buttonBarPositiveButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle" tools:targetApi="lollipop">@style/DatePickerTheme.ButtonBarNegativeButtonStyle</item>
+    </style>
+<!--    <style name="AlertDialog.AppCom>-->
+<!--        -->
+<!--    </style>-->
+
+    <style name="DatePickerTheme.ButtonBarNegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="DatePickerTheme.buttonBarPositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/light_black</item>
+    </style>
+    <style name="DatePickerDialog" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/green</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/red</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/red_light</item>
+    </style>
+    <style name="SwitchCompatStyle">
+        <item name="colorControlActivated">@color/green</item>
+        <item name="trackTint">@color/light_green</item>
+    </style>
+
+    <color name="light_green">#4CAF50</color>
+</resources>

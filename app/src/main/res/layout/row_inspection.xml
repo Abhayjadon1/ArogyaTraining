@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llBody"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_5sdp">
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="12/12/2022"
+                android:id="@+id/tv_family_id"
+                android:singleLine="true"
+                android:gravity="center"
+                android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="2.5"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:weightSum="3"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+
+                       <TextView
+                           android:padding="@dimen/_5sdp"
+                           android:layout_width="0dp"
+                           android:layout_weight="2"
+                           android:layout_height="wrap_content"
+                           android:text="@string/vidhalaya_contact_ekal_vidhalaya_4_days_other_vidhalaya_4_days"
+                           android:gravity="center_vertical|left"
+                           android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                           android:textColor="@color/white"
+                           android:textSize="@dimen/_11sdp" />
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="match_parent"
+                           android:gravity="center"
+                           android:weightSum="2"
+                           android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                           android:orientation="horizontal">
+                           <TextView
+                               android:padding="@dimen/_5sdp"
+                               android:layout_weight="1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="@dimen/_30sdp"
+                               android:text="A"
+                               android:layout_gravity="center"
+                               android:id="@+id/tv_vidhyalay_grade"
+                               android:gravity="center"
+                               android:singleLine="true"
+                               android:textColor="@color/white"
+                               android:textSize="@dimen/_11sdp" />
+
+                       </LinearLayout>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:weightSum="3"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:padding="@dimen/_5sdp"
+                       android:layout_width="0dp"
+                       android:layout_weight="2"
+                       android:layout_height="wrap_content"
+                       android:text="@string/every_month_3_jagran_program"
+                       android:gravity="center_vertical|left"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_11sdp" />
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:weightSum="2"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:padding="@dimen/_5sdp"
+                           android:layout_weight="1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/_30sdp"
+                           android:text="A"
+                           android:layout_gravity="center"
+                           android:id="@+id/tv_jagaran_grade"
+                           android:gravity="center"
+                           android:singleLine="true"
+                           android:textColor="@color/white"
+                           android:textSize="@dimen/_11sdp" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:weightSum="3"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:padding="@dimen/_5sdp"
+                       android:layout_width="0dp"
+                       android:layout_weight="2"
+                       android:layout_height="wrap_content"
+                       android:text="@string/family_contact_50_per_month"
+                       android:gravity="center_vertical|left"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_11sdp" />
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:weightSum="2"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:padding="@dimen/_5sdp"
+                           android:layout_weight="1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/_30sdp"
+                           android:text="A"
+                           android:layout_gravity="center"
+                           android:id="@+id/tv_family_grade"
+                           android:gravity="center"
+                           android:singleLine="true"
+                           android:textColor="@color/white"
+                           android:textSize="@dimen/_11sdp" />
+
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:weightSum="3"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:padding="@dimen/_5sdp"
+                       android:layout_width="0dp"
+                       android:layout_weight="2"
+                       android:layout_height="wrap_content"
+                       android:text="@string/poster_display_four_days_a_month_per_week"
+                       android:gravity="center_vertical|left"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_11sdp" />
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:weightSum="2"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:padding="@dimen/_5sdp"
+                           android:layout_weight="1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/_30sdp"
+                           android:text="A"
+                           android:layout_gravity="center"
+                           android:id="@+id/tv_poster_grade"
+                           android:gravity="center"
+                           android:singleLine="true"
+                           android:textColor="@color/white"
+                           android:textSize="@dimen/_11sdp" />
+
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:weightSum="3"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:padding="@dimen/_5sdp"
+                       android:layout_width="0dp"
+                       android:layout_weight="2"
+                       android:layout_height="wrap_content"
+                       android:text="@string/plantation_of_vanaushadhi_samplings_per_family"
+                       android:gravity="center_vertical|left"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_11sdp" />
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:weightSum="2"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:padding="@dimen/_5sdp"
+                           android:layout_weight="1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/_30sdp"
+                           android:text="A"
+                           android:layout_gravity="center"
+                           android:id="@+id/tv_plantation_grades"
+                           android:gravity="center"
+                           android:singleLine="true"
+                           android:textColor="@color/white"
+                           android:textSize="@dimen/_11sdp" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:weightSum="3"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:padding="@dimen/_5sdp"
+                       android:layout_width="0dp"
+                       android:layout_weight="2"
+                       android:layout_height="wrap_content"
+                       android:text="@string/other"
+                       android:gravity="center_vertical|left"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_11sdp" />
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:weightSum="2"
+                       android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:padding="@dimen/_5sdp"
+                           android:layout_weight="1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/_30sdp"
+                           android:text="A"
+                           android:layout_gravity="center"
+                           android:id="@+id/tv_ohter_grades"
+                           android:gravity="center"
+                           android:singleLine="true"
+                           android:textColor="@color/white"
+                           android:textSize="@dimen/_11sdp" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent"
+
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/editbtn"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_24sdp"
+                    android:minHeight="@dimen/_15sdp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"/>
+                <ImageView
+                    android:id="@+id/viewbtn"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_visible"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

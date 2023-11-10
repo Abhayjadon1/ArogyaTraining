@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent_80"
+    tools:context=".main.dashotheractivity.herbalremedies.medicinegarden.AddMedicineGarden">
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/medicine_garden"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@+id/ll_header"
+           android:layout_marginStart="@dimen/_15sdp"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:layout_marginEnd="@dimen/_15sdp"
+           android:layout_marginBottom="@dimen/_15sdp">
+           <androidx.cardview.widget.CardView
+               app:cardBackgroundColor="@color/black_transparent_80"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               app:cardCornerRadius="@dimen/_15sdp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/light_shape"
+                        android:backgroundTint="@color/black_transparent_80"
+                   android:orientation="horizontal"
+                   android:padding="@dimen/_12sdp"
+                   android:weightSum="3">
+
+                   <TextView
+                       android:id="@+id/tv_family_head"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="2"
+                       android:text="@string/family_head"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_16sdp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/tv_family_id"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="@string/family_id"
+                       android:textStyle="bold"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_16sdp" />
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_marginStart="@dimen/_15sdp"
+                   android:layout_marginEnd="@dimen/_15sdp"
+                   android:layout_marginBottom="@dimen/_15sdp"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_weight="1"
+                       android:text="@string/_month"
+                       android:textColor="@color/text_color"
+                       android:textSize="@dimen/_13sdp" />
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:background="@drawable/edit_box">
+
+                       <TextView
+                           android:id="@+id/tv_date"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                           android:drawableTint="@color/green"
+                           android:gravity="center"
+                           android:background="@color/black_transparent_80"
+                           android:minHeight="@dimen/_30sdp"
+                           android:padding="@dimen/_5sdp" />
+
+                   </RelativeLayout>
+
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_marginStart="@dimen/_15sdp"
+                   android:layout_marginEnd="@dimen/_15sdp"
+                   android:layout_marginBottom="@dimen/_15sdp">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/medicine_plants"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_13sdp"
+                       android:textStyle="bold" />
+
+                 <androidx.recyclerview.widget.RecyclerView
+                   xmlns:android="http://schemas.android.com/apk/res/android"
+                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                     android:id="@+id/rv_plant_listdata"
+                     tools:listitem="@layout/row_selected_plant_list"/>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:id="@+id/ll_forPlantation">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/_15sdp"
+                           android:textStyle="bold"
+                           android:layout_marginTop="@dimen/_15sdp"
+                           android:layout_marginBottom="@dimen/_15sdp"
+                           android:padding="@dimen/_5sdp"
+                           android:textColor="@color/white"
+                           android:text="@string/plantation"/>
+                       <androidx.recyclerview.widget.RecyclerView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/selecteRv"
+                           tools:listitem="@layout/row_selected_plant"/>
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_margin="@dimen/_30sdp"
+                   android:background="@drawable/green_button"
+                   android:backgroundTint="@color/green"
+                   android:gravity="center"
+                   android:paddingLeft="@dimen/_20sdp"
+                   android:paddingTop="@dimen/_8sdp"
+                   android:paddingRight="@dimen/_20sdp"
+                   android:paddingBottom="@dimen/_8sdp"
+                   android:text="@string/submit"
+                   android:textAllCaps="true"
+                   android:id="@+id/btn_submit"
+                   android:textColor="@color/white"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+       </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

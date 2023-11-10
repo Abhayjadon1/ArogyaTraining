@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.dashboardFragments.TaskActivity">
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_add"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/village_family"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tv_add"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/green_button"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/places_ic_search"
+            android:hint="@string/search"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ll_header"
+       android:layout_margin="@dimen/_5sdp">
+       <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+           android:id="@+id/dashSwipeRefreshLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.recyclerview.widget.RecyclerView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/rv_village_family_recyclerview"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               tools:listitem="@layout/row_task_list" />
+
+       </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+   </LinearLayout>
+
+
+
+</RelativeLayout>

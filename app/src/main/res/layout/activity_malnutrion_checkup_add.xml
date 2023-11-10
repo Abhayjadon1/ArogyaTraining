@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    tools:context=".main.dashotheractivity.malnutrition.malnutrion.MalnutrionCheckupAdd">
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/malnutrition_checkup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/black"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#71bdd9"
+                        android:layout_toRightOf="@+id/iv_back"
+                        android:padding="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/malnutrition_checkup"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#71bdd9">
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#71bdd9"
+                            android:layout_toRightOf="@+id/iv_back"
+                            android:padding="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:hint="@string/name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13sdp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_10sdp">
+                            <TextView
+                                android:id="@+id/relationTv"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#71bdd9"
+                                android:layout_toRightOf="@+id/iv_back"
+                                android:padding="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                            <View
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"/>
+                            <TextView
+                                android:id="@+id/tvAge"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#71bdd9"
+                                android:layout_toRightOf="@+id/iv_back"
+                                android:padding="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text="@string/age_"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                            <View
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"/>
+                            <TextView
+                                android:id="@+id/gendertv"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#71bdd9"
+                                android:layout_toRightOf="@+id/iv_back"
+                                android:padding="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black_transparent_80" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_10sdp"-->
+                        <!--                            android:layout_weight="1"-->
+                        <!--                            android:text="@string/name"-->
+                        <!--                            android:textColor="@color/white"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/et_name"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                            android:layout_toLeftOf="@+id/ivDate"-->
+                        <!--                            android:background="@drawable/edit_box"-->
+                        <!--                            android:padding="@dimen/_5sdp"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:text="@string/inspection_date"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/et_inspection_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_toLeftOf="@+id/ivDate"
+                                    android:background="@drawable/edit_box"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <ImageView
+                                    android:id="@+id/ivDate"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:src="@drawable/date_icon" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_10sdp"-->
+                        <!--                            android:weightSum="2">-->
+
+                        <!--                            <LinearLayout-->
+                        <!--                                android:id="@+id/ll_age"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginLeft="@dimen/_2sdp"-->
+                        <!--                                android:layout_weight="1"-->
+                        <!--                                android:orientation="vertical">-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:text="@string/age"-->
+                        <!--                                    android:textColor="@color/text_color"-->
+                        <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                                <Spinner-->
+                        <!--                                    android:id="@+id/spinner_age"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                                    android:background="@drawable/edit_box"-->
+                        <!--                                    android:padding="@dimen/_10sdp"-->
+                        <!--                                    android:textSize="@dimen/_12sdp" />-->
+                        <!--                            </LinearLayout>-->
+
+                        <!--                            <LinearLayout-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginRight="@dimen/_2sdp"-->
+                        <!--                                android:layout_weight="1"-->
+                        <!--                                android:gravity="center"-->
+                        <!--                                android:layout_gravity="center"-->
+                        <!--                                android:orientation="vertical">-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:text="@string/pregnant"-->
+                        <!--                                    android:textColor="@color/text_color"-->
+                        <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                                <LinearLayout-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:orientation="horizontal"-->
+                        <!--                                    android:weightSum="2"-->
+                        <!--                                    android:layout_gravity="center">-->
+                        <!--                                    <CheckBox-->
+                        <!--                                        android:id="@+id/cb_yes"-->
+                        <!--                                        android:layout_width="match_parent"-->
+                        <!--                                        android:layout_height="wrap_content"-->
+                        <!--                                        android:layout_weight="1"-->
+                        <!--                                        android:text="@string/yes" />-->
+
+                        <!--                                    <CheckBox-->
+                        <!--                                        android:id="@+id/cb_no"-->
+                        <!--                                        android:layout_width="match_parent"-->
+                        <!--                                        android:layout_height="wrap_content"-->
+                        <!--                                        android:layout_weight="1"-->
+                        <!--                                        android:text="No" />-->
+
+                        <!--                                </LinearLayout>-->
+                        <!--                            </LinearLayout>-->
+
+                        <!--                        </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginTop="@dimen/_10sdp">
+                            <LinearLayout
+                                android:id="@+id/llanemiatest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/malnutrition_checkup"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/_14sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+                                    <CheckBox
+                                        android:id="@+id/cb_malnutrition_test_yes"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/yes" />
+
+                                    <CheckBox
+                                        android:id="@+id/cb_malnutrition_test_no"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/no" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/llanemiatype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mid_arm_measurement"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_14sdp" />
+
+                           <Spinner
+                               android:id="@+id/mid_arm_spinner"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+
+                               android:minHeight="@dimen/_30sdp"/>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/green_button"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_40sdp"
+                            android:paddingRight="@dimen/_40sdp"
+                            android:text="@string/submit"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.inventics.ekalarogya.training",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 10000019,
+      "versionName": "0.0.19",
+      "outputFile": "Arogya __10-Nov-2023_-0.0.19_10000019.apk"
+    }
+  ],
+  "elementType": "File"
+}

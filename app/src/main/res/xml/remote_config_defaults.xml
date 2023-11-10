@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>load_amount_suggestion_one</key>
+        <value>50</value>
+    </entry>
+    <entry>
+        <key>load_amount_suggestion_two</key>
+        <value>100</value>
+    </entry>
+    <entry>
+        <key>load_amount_suggestion_three</key>
+        <value>200</value>
+    </entry>
+
+</defaultsMap><!-- END xml_defaults -->

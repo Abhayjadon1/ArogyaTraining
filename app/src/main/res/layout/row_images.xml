@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_95sdp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iMageJagaran"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/add_image" />
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:src="@drawable/delete_24" />
+
+</RelativeLayout>

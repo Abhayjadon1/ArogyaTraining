@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/grey</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#88D317</color>
+    <color name="grey">#757575</color>
+
+    <color name="light_grey">#e0e0e0</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="dark_grey">#7e7e7e</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#F96A1B</color>
+    <color name="orange_box">#FFEBDD</color>
+    <color name="blue">#33B5E5</color>
+    <color name="black">#000000</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="gunmetal">#535353</color>
+    <color name="teal">#009688</color>
+    <color name="background_grey">#EEEEEE</color>
+    <color name="light_black">#3b3c36</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="snackbar_bg_color">#323232</color>
+    <color name="purple_200">#F4DB9A</color>
+    <color name="purple_500">#48C7F4</color>
+    <color name="purple_700">#008EC2</color>
+    <color name="teal_200">#F6C549</color>
+    <color name="teal_700">#FFBA0D</color>
+
+    <color name="green">#1E811E</color>
+    <color name="language_color">#C5D0E0</color>
+    <color name="background_color">#EDF2FA</color>
+    <color name="text_color">#F3FAFAFA</color>
+<!--    <color name="text_color">#F3232323</color>-->
+    <color name="text_color2">#486AB8</color>
+
+    <color name="bg_color_pressed">#363636</color>
+    <color name="red_light">#FD1100</color>
+
+
+
+    //Support Ticket
+
+<!--    <color name="light_green">#99FAB5</color>-->
+    <color name="light_red">#F4867D</color>
+    <color name="light_blue">#8594E6</color>
+    <color name="light_orange">#E2F88663</color>
+    <color name="gray">#c0c0c0</color>
+    <color name="dark_gray">#777676</color>
+    <color name="lightgray">#F7F2F2</color>
+    <color name="material_teal_100">#B2DFDB</color>
+    <color name="material_teal_500">#009688</color>
+    <color name="backgroun">#E1E1DCDC</color>
+
+    <color name="black_transparent">#AA000000</color>
+    <color name="black_transparent_50">#80000000</color>
+    <color name="black_transparent_80">#CC000000</color>
+    <color name="black_transparent_70">#B3000000</color>
+    <color name="colorBtnSelected">#0AC129</color>
+    <color name="colorBtnDeSelected">#F2F2F2</color>
+
+
+
+</resources>

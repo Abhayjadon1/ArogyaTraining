@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_transparent_50"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_add"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/medicine_garden"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/green_button"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/add"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_header"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llHead_vill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:background="@color/colorPrimaryDark"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_family_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/family_head"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_family_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/family_id"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHead_garden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:weightSum="8"
+                android:background="@color/black"
+                android:paddingLeft="@dimen/_1sdp"
+                android:paddingRight="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:layout_marginHorizontal="@dimen/_9sdp"
+                    android:background="@color/light_black">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:paddingLeft="@dimen/_1sdp"
+                        android:paddingRight="0.5dp"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/_1sdp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/month"
+                            android:background="@color/light_black"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@color/white"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:paddingLeft="0.5dp"
+                        android:paddingRight="@dimen/_1sdp"
+                        android:paddingBottom="@dimen/_1sdp">
+
+
+                        <TextView
+                            android:id="@+id/tv_list_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:background="@color/light_black"
+                            android:text="@string/mideinal_palnts"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:visibility="gone"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/edit"
+                            android:background="@color/light_black"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/dashSwipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rv_medicineGarden_recyclerview"
+                    android:layout_width="match_parent"
+                    android:background="@color/black"
+                    android:layout_marginHorizontal="@dimen/_9sdp"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/row_single_fam_med_harden" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_data"
+
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addMember"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@color/black">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/tableRow1"
+        android:weightSum="5"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_9sdp"
+        android:paddingBottom="@dimen/_1sdp"
+        android:paddingLeft="@dimen/_1sdp"
+        android:paddingRight="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_1sdp" >
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="1"
+            android:background="@color/light_black"
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/white"
+           />
+        <TextView
+            android:id="@+id/tv_plants"
+            android:layout_width="0dp"
+            android:minHeight="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:layout_weight="2.5"
+            android:background="@color/light_black"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:background="@color/light_black"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:weightSum="1"
+            android:visibility="visible">
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/vieweye"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/ic_visible"
+                android:padding="@dimen/_1sdp"/>
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/editbtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_edit"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ଏକଲ ଆରୋଗ୍ୟ</string>
+    <string name="no_internet_connection">ଦୟାକରି ଡାଟା କିମ୍ଭା ୱାଇଫାଇ ରେ ସଂଯୋଗ  କରନ୍ତୁ </string>
+    <string name="dont_have_account">ଖାତା / ଏକାଉଣ୍ଟ୍ ନାହିଁ ? ସାଇନ୍ ଅପ୍ କର</string>
+    <string name="didn_t_received_otp">ଓଟିପି ଗ୍ରହଣ କରିପାରିଲ ନାହଁ ? ଆଉ ଥରେ ପଠାନ୍ତୁ </string>
+    <string name="login_failed_message">ଲଗିନ୍ ବିଫଳ, ଦୟାକରି ଆଉ ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ</string>
+    <string name="resend_in">ଆଉ ଥରେ ପଠାନ୍ତୁ   ଦୁଇ ସେକେଣ୍ଡ ପରେ</string>
+    <string name="resend_otp_failed"> ଆଉ ଥରେ ଓଟିପି ପଠାଇବା ବିଫଳ, ଦୟାକରି ଆଉ ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ</string>
+    <string name="no_address_found">ଜିଓକୋଡର ଠିକଣା ସୂଚିତ କରିପାରୁ ନାହିଁ</string>
+    <string name="invalid_lat_long_used">ଅକ୍ଷାଂଶ ଓ ଦ୍ରାଘିମା ମୂଲ୍ୟବୋଧ</string>
+    <string name="address_found">ଠିକଣା ଠିକ୍ ରୁପେ ଦେଖାଗଲା</string>
+    <string name="service_not_available">ସର୍ଭିସ୍ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="rate_app_title">ଆପ ମୂଲ୍ୟାୟନ କର</string>
+    <string name="rate_app_message">ଯଦି ଆପଣ ଆମର ଆପ ବ୍ୟବହାର କରନ୍ତି, ଦୟାକରି ନିଅ</string>
+    <string name="rate_btn_pos">ବର୍ତ୍ତମାନ ମୂଲ୍ୟାୟନ କର</string>
+    <string name="rate_btn_neg">ପରେ ମୋତେ ମନେ ପକାଅ</string>
+    <string name="rate_btn_nut">ନାଁ, ଧନ୍ୟବାଦ୍</string>
+
+    <string name="title_activity_splash">ପ୍ରକ୍ଷିପ୍ତ କାର୍ଯ୍ୟକ୍ରମ</string>
+    <string name="title_home">ଘର</string>
+    <string name="title_dashboard">ଡ୍ୟ।ସବୋର୍ଡ</string>
+    <string name="title_notifications">ସୁଚନା ଫଳକ</string>
+    <string name="app_url">http://arogya.ekaltech.com/</string>
+    <string name="otp_mobile_message">ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ, ଆପଣ SMS ପାଇବେ</string>
+    <string name="title_activity_home">ଘରୋଇ ଗତିବିଧି</string>
+    <string name="navigation_drawer_open">କୌଶଳ ବାହାର କର</string>
+    <string name="navigation_drawer_close">କୌଶଳ ବନ୍ଦ କର</string>
+    <string name="nav_header_title">ଆଣ୍ଡ୍ରଏଡ ଷ୍ଟୁଡିଓ</string>
+
+    <string name="nav_header_desc">କୌଶଳ ମାର୍ଗ</string>
+    <string name="action_settings">ସେଟିଙ୍ଗ </string>
+    <string name="menu_home">ଘର </string>
+    <string name="menu_gallery">ଗ୍ୟାଲେରୀ</string>
+    <string name="menu_slideshow">ସ୍ଲାଇଡ୍ ସୋ</string>
+    <string name="select_language">ଭାଷା ଚୟନ କର </string>
+    <string name="please_select_a_language_that_you_can_read_and_understand_comfortably">ଦୟାକରି ଏକ ଭାଷା ଚୟନ କରନ୍ତୁ</string>
+    <string name="family_id">ପରିବାର id</string>
+    <string name="family_head">ପରିବାର ମୁଖ୍ୟ</string>
+    <string name="total_members">ମୋଟ ପରିବାର ସଂଖ୍ୟା</string>
+    <string name="village_family">ଗାଁ ପରିବାର</string>
+    <string name="add">ଯୋଗ କର</string>
+    <string name="add_village_family">ଗାଁ ପରିବାର ଯୋଗ</string>
+    <string name="view_village_family">ଗାଁ ପରିବାର ପରିଦର୍ଶନ</string>
+    <string name="update_village_family">ଗାଁ ପରିବାର ଅପ ଡେଟ କର</string>
+    <string name="family_verification_detail">ପରିବାର ଯାଞ୍ଚ</string>
+    <string name="head_of_family_detail">ପରିବାର ମୁଖ୍ୟ ଙ୍କ ବିଷୟରେ</string>
+    <string name="gender">ଲିଙ୍ଗ</string>
+    <string name="age">ବୟସ</string>
+    <string name="mobile_no">ମୋବାଇଲ୍ ନମ୍ବର୍</string>
+    <string name="occupation">ବ୍ୟବସାୟ </string>
+    <string name="address">ଠିକଣା</string>
+    <string name="add_geo_location">ଜିଓ ଲୋକେସନ ସଂଯୋଗ କର</string>
+    <string name="adhar"> ଆଧାର</string>
+    <string name="family_members">ପରିବାର ସଦସ୍ୟ ମାନେ</string>
+    <string name="relation">ସମ୍ପର୍କ</string>
+    <string name="married">ବିବାହିତ</string>
+    <string name="personal_hygiene">ବ୍ୟକ୍ତିଗତ ସ୍ୱଚ୍ଛତା</string>
+    <string name="social_sanitation"> ସାମାଜିକ ସ୍ୱଚ୍ଛତା</string>
+    <string name="preventive">ପ୍ରତିଷେଧକ</string>
+    <string name="id">id ( ଆଇ ଡି )</string>
+    <string name="date"> ତାରିଖ</string>
+    <string name="children_name">ପିଲାଙ୍କ ନାମ</string>
+    <string name="hygiene_checkup">ସ୍ବାସ୍ଥ୍ୟ ରକ୍ଷା ଯାଞ୍ଚ</string>
+    <string name="inspection_date">ତଦାରଖ ତାରିଖ</string>
+    <string name="fill_hygiene_checkup_detailes">ସ୍ବାସ୍ଥ୍ୟ ରକ୍ଷା ସମୁଦାୟ ତଦାରଖ</string>
+    <string name="nail_checkup">ନଖ ର ତାଦରକ</string>
+    <string name="yes">ହଁ</string>
+    <string name="no">ନାଁ</string>
+    <string name="health_checkup">ସ୍ବାସ୍ଥ୍ୟ ପରୀକ୍ଷା</string>
+    <string name="disease_prevention">ରୋଗ ପ୍ରତିଷେଧକ</string>
+    <string name="village">ଗ୍ରାମ</string>
+    <string name="awareness">ସଚେତନତା</string>
+    <string name="total_presence">ସମୁଦାୟ ଉପସ୍ଥିତ</string>
+    <string name="subject_of_disease_prevention_awareness">ରୋଗ ପ୍ରତିଷେଧକ ବିଷୟ ର ସଚେତନତା</string>
+    <string name="village_name">ଗ୍ରାମ ନାମ</string>
+    <string name="presence">ଉପସ୍ଥାନ</string>
+    <string name="malnutrition">ଅପପୃଷ୍ଟି</string>
+    <string name="amenia_in_pregnancy">ରକ୍ତହୀନତା/ ତଦାରଖ</string>
+    <string name="malnutrition_checkup">ଅପପୃଷ୍ଟି ତଦାରଖ</string>
+    <string name="anemia_control_program">ରକ୍ତହୀନତା ନିୟନ୍ତ୍ରଣ କାର୍ଯ୍ୟକ୍ରମ</string>
+    <string name="name">ନାମ</string>
+    <string name="pregnant">ଗର୍ଭବତୀ</string>
+    <string name="anemic">ରକ୍ତହୀନତା</string>
+    <string name="anemic_test"> ରକ୍ତହୀନତା ଯାଞ୍ଚ</string>
+    <string name="anemic_type">ରକ୍ତହୀନତା ର ପ୍ରକାର</string>
+    <string name="anemia_test">ରକ୍ତହୀନତା ପରୀକ୍ଷା</string>
+    <string name="mid_arm_measurement">ମଧ୍ୟ ବାହୁର ମାପକ</string>
+    <string name="mulnourished">କୁପୋଷଣ</string>
+    <string name="herbal_remedies">ଚେରମୂଳି ପ୍ରତିକାର</string>
+    <string name="ayurvedic_treatment">ଆୟର୍ବେଦିକ ଚିକିତ୍ସା</string>
+    <string name="medicine_garden">ଔଷଧୀୟ ବଗିଚା</string>
+    <string name="medicine_preparation">ଔଷଧ ତିଆରି</string>
+    <string name="ayurvedic_treatments"> ଆୟୁର୍ବେଦ ଚିକିତ୍ସା</string>
+    <string name="month">ମାସ</string>
+    <string name="treatment">ଚିକିତ୍ସା</string>
+    <string name="total_patient">ସମୁଦାୟ ରୋଗୀ</string>
+    <string name="total_cured">ସମୁଦାୟ ଆରୋଗ୍ୟ</string>
+    <string name="children">ପିଲାମାନେ</string>
+    <string name="emergency_handling"> ଜରୁୀକାଳୀନ ପରିଚାଳନା</string>
+    <string name="first_aid">ପ୍ରାଥମିକ ଚିକିତ୍ସା</string>
+    <string name="emergency_training">ଜରୁୀକାଳୀନ ତାଲିମ</string>
+    <string name="emergency_response_training">ଜରୁୀକାଳୀନ ଉତ୍ତର ତାଲିମ</string>
+    <string name="eye_checkup">ଆଖି ପରୀକ୍ଷା</string>
+    <string name="eye_screening">ଆଖି ନିବନ୍ଧନ</string>
+    <string name="eye_van"> ଆଖି ଯାନ</string>
+    <string name="search">ବାକ୍ତବ୍ୟ</string>
+    <string name="family">ପାରିବାର</string>
+    <string name="social_sanitation_fill">ସାମାଜିକ ସ୍ୱଚ୍ଛତା ଭଲ ରୂପେ ପୁରଣ କର</string>
+    <string name="compostpit">ଜୈବିକ  ଖାତ</string>
+    <string name="toilet">ପାଇଖାନା</string>
+    <string name="waterTreatment">ପାଣି ଛାଣିବା ଯନ୍ତ୍ର</string>
+    <string name="program_date">କାର୍ଯ୍ୟ ଧାର୍ଯ୍ୟ ତାରିଖ</string>
+    <string name="malnurished"> ଅପପୃଷ୍ଟି</string>
+    <string name="van_aushadhi">ବନୌଷଧି</string>
+    <string name="vanaushadhi">ବନୌଷଧି</string>
+    <string name="pateint_name">ରୋଗୀର ନାମ</string>
+    <string name="recovery_status">ଆରୋଗ୍ୟ ଲାଭର ସ୍ଥିତି </string>
+    <string name="problem">ସମସ୍ୟା</string>
+    <string name="prescription">ପ୍ରତିକାର </string>
+    <string name="samiti_meeting">ସମିତି ବୈଠକ</string>
+    <string name="no_of_presence">ଉପସ୍ଥିତ ସଂଖ୍ୟା</string>
+    <string name="add_samiti_meeting">ସମିତି ସବିଶେଷ ତଥ୍ୟ ଯୋଗ କର</string>
+    <string name="poster_display">ପ୍ରଚାର ପତ୍ର ପ୍ରଦର୍ଶନ</string>
+    <string name="week">ସପ୍ତାହ</string>
+    <string name="add_poster_display">ଆରୋଗ୍ୟ ପ୍ରଚାର ପତ୍ର ପ୍ରଦର୍ଶନ</string>
+    <string name="arogya_topic_posters">ଆରୋଗ୍ୟ ପ୍ରଚାର ପତ୍ର ବିଷୟ </string>
+    <string name="select_week">ସପ୍ତାହ ବାଛିବା</string>
+    <string name="no_of_poster_diplay">ଆରୋଗ୍ୟ ପ୍ରଚାର ପତ୍ର ପ୍ରଦର୍ଶନ ସଂଖ୍ୟା</string>
+    <string name="purpose">ଉଦ୍ଦେଶ୍ୟ</string>
+    <string name="village_visit">ଗ୍ରାମ ପରିଦର୍ଶନ</string>
+    <string name="village_visit_add">ଗ୍ରାମ ପରିଦର୍ଶନ</string>
+    <string name="total_doctor">ସମୁଦାୟ ଚିକିତ୍ସକ</string>
+    <string name="arogya_camp">ଆରୋଗ୍ୟ ଶିବିର</string>
+    <string name="program">କାର୍ଯ୍ୟକ୍ରମ </string>
+    <string name="jagran_program">ସଚେତନ କାର୍ଯ୍ୟକ୍ରମ</string>
+    <string name="inspection_stay_add">ତଦାରଖ କରିବା</string>
+    <string name="inspection_subject">ବିଷୟ ତଦାରଖ</string>
+    <string name="dob">ଜନ୍ମ ତାରିଖ</string>
+    <string name="cancel">ବାତିଲ</string>
+    <string name="power">ଶକ୍ତି</string>
+    <string name="use">ବ୍ୟବହାର</string>
+    <string name="right">ଠିକ୍</string>
+    <string name="left">ବାମ</string>
+    <string name="sph">( ଏସ ପି ଏଚ ) sph</string>
+    <string name="cyl">ସିୱାଇଏଲ୍ ( cyl )</string>
+    <string name="axis">ଅକ୍ଷ</string>
+    <string name="issue_glasses">କାଚ ସବୁ ବାହାର କରିବା</string>
+    <string name="issue_medic">ଔଷଧ ବ୍ୟବସ୍ଥା</string>
+    <string name="fee">ଶୁକ୍ଳ/ ପାଉଣା</string>
+    <string name="reffered_to">ପ୍ରେରଣ କରିବା</string>
+    <string name="absent">ଅନୁପସ୍ଥିତ</string>
+    <string name="camera_not_supported">କ୍ୟାମେରା ସମର୍ଥନ କରୁନି</string>
+    <string name="present">ଉପସ୍ଥିତ</string>
+    <string name="storage_permission_required">ଅନୁମତି ଦରକାର</string>
+    <string name="storage_permission_deny">ମନା କରିବା</string>
+    <string name="all_permission_required">ସବୁ ଅନୁମତି ଦରକାର</string>
+
+    <string name="submit">ଅଧୀନ/ ନିବେଦନ</string>
+    <string-array name="mid_arm">
+        <item>ଡିସେମ୍ବର ୧୩</item>
+        <item>୧୩/ ୧୪</item>
+        <item>୧୪/୧୫</item>
+    </string-array>
+    <string-array name="weak_list">
+        <item>ପ୍ରଥମ</item>
+        <item>ଦ୍ଵିତୀୟ</item>
+        <item>ତୃତୀୟ</item>
+        <item>ଚତୁର୍ଥ</item>
+    </string-array>
+    <string-array name="treat_option">
+        <item>ବାଛିବା</item>
+        <item>ଆରୋଗ୍ୟ ଲାଭ</item>
+        <item>ଆରୋଗ୍ୟ ନ ହେବା</item>
+        <item>ପ୍ରେରଣ କରିବା</item>
+    </string-array>
+    <string-array name="progress">
+        <item>ବାଛିବା</item>
+        <item>ସମସ୍ତ</item>
+        <item>ଆରମ୍ଭ ହୋଇନି</item>
+        <item>ଅଗ୍ରଗତି ଅଛି</item>
+        <item>ସମାପ୍ତ ହେଲା</item>
+    </string-array>
+    -<string-array name="months_array">
+    <item>ମାସ ନିରୁପଣ</item>
+    <item>ଜାନୁଆରୀ</item>
+    <item>ଫେବୃଆରୀ</item>
+    <item>ମାର୍ଚ୍ଚ</item>
+    <item>ଏପ୍ରିଲ</item>
+    <item> ମେ</item>
+    <item> ଜୁନ</item>
+    <item>ଜୁଲାଇ</item>
+    <item> ଅଗଷ୍ଟ</item>
+    <item>ସେପ୍ଟେମ୍ବର</item>
+    <item>ଅକ୍ଟୋବର</item>
+    <item>ନଭେମ୍ବର</item>
+    <item>ଡିସେମ୍ବର</item>
+</string-array>
+    <string-array name="arogya_topic">
+        <item>ସ୍ବାସ୍ଥ୍ୟ ସଚେତନତା</item>
+        <item>ନିୟମିତ</item>
+        </string-array>
+        <string name="app_version"> ଆପ୍ ଭର୍ଶନ   </string>
+        <string name="male">ପୁରୁଷ</string>
+        <string name="female">ସ୍ତ୍ରୀ/ ମହିଳା</string>
+        <string name="reset">ପୁନଃ ନିରଧାରଣ କରିବା</string>
+        <string name="home">ଘର</string>
+        <string name="task_list">କାର୍ଯ୍ୟ ଭାର ତାଲିକା</string>
+        <string name="profile">ନିଜ ବିଷୟ</string>
+        <string name="logout">ଲଗ ଆଉଟ୍</string>
+        <string name="mobile_no_option">ମୋବାଇଲ୍ ନମ୍ବର ( ଅତିରିକ୍ତ )</string>
+        <string name="select_image">ଛବି ନିର୍ଦ୍ଧାରଣ</string>
+        <string name="select_from_gallary">ଗାଲେରି ରୁ ନିର୍ଦ୍ଧାରଣ</string>
+        <string name="capture_from_camera">କ୍ୟାମେରା ରୁ ଧରିବା</string>
+        <string name="status"> ସ୍ଥିତି</string>
+        <string name="you">ତୁମେ</string>
+        <string name="support">ସହଯୋଗ</string>
+        <string name="add_support_ticket">ସହଯୋଗୀ ଟିକେଟ ଯୋଗ</string>
+        <string name="detail_support_ticket">ଟିକେଟର ସବିଶେଷ ତଥ୍ୟ</string>
+        <string name="sanch_coordinator">ସଂଚ ସଂଯୋଜକ</string>
+        <string name="no_data">ତଥ୍ୟ ନାହିଁ</string>
+        <string name="_month">ମାସ</string>
+        <string name="medicine_plants">ଔଷଧୀୟ ଗଛ</string>
+        <string name="plantation">ବୃକ୍ଷ ରୋପଣ</string>
+        <string name="arogya_camp_month">ଆରୋଗ୍ୟ ଶିବିର ମାସ</string>
+        <string name="no_of_pat">ରୋଗୀ ସଂଖ୍ୟା</string>
+        <string name="jagaran_awaking_program"> ଜାଗରଣ କାର୍ଯ୍ୟକ୍ରମ</string>
+        <string name="village_namee">ଗ୍ରାମ ନାମ</string>
+        <string name="fill_in_each">ପ୍ରତ୍ୟେକ କାର୍ଯ୍ୟକ୍ରମ ପୁରଣ କର</string>
+        <string name="health_jagaran_rally">ସ୍ୱାସ୍ଥ୍ୟ ସଚେତନତା  ରାଲି</string>
+        <string name="soak_pit">ସୋକ୍ତା ଗାଢ଼ା</string>
+        <string name="waste_pit">କଚଡ଼ା ଗାଢ଼ </string>
+        <string name="nails_health"> ନଖ ଓ ସ୍ବାସ୍ଥ୍ୟ</string>
+        <string name="plz_add_family"> ଦୟାକରି ପରିବାର ଯୋଗ କର</string>
+        <string name="family_head_namr">ପରିବାର ମୁଖିଆ ନାମ</string>
+        <string name="member_name">ସଦସ୍ୟ ନାମ</string>
+        <string name="age_">ବୟସ</string>
+        <string name="add_arogya_camp_pic">ଆରୋଗ୍ୟ ଶିବିର ଫଟୋ ସବୁ ଯୋଗ କର</string>
+        <string name="adults">ବୟସ୍କ</string>
+        <string name="awareness_posters">ଆରୋଗ୍ୟ ପୋଷ୍ଟର ସଚେତନତା</string>
+        <string name="add_poster_display_photo">ପୋଷ୍ଟର ପ୍ରଦର୍ଶନ ଫଟୋ ସବୁ ଯୋଗ କର</string>
+        <string name="arogya_villg_samiti_meeting">ଆରୋଗ୍ୟ ଗ୍ରାମ ସମିତି ମିଟିଂ</string>
+        <string name="arogya_maitii">ଆରୋଗ୍ୟ ସମିତି</string>
+        <string name="arogya_samiti"> ଆରୋଗ୍ୟ ସେବିକା</string>
+        <string name="arogya_sevavriti">ଅରୋଗ୍ୟ ସେବାବର୍ତ୍ତି</string>
+        <string name="anshu_gupta"> ଅଂସୁ ଗୁପ୍ତା</string>
+        <string name="boys">ବାଳକ</string>
+        <string name="ballia">ବାଳିକା</string>
+        <string name="cleanliness">ସଫା ସୁତୁରା</string>
+        <string name="child_saftey">ଶିଶୁ ନିରାପତ୍ତା</string>
+        <string name="cuts"> କଟା</string>
+        <string name="create_ticket">ଟିକେଟ ସୃଷ୍ଟି କରିବା</string>
+        <string name="camp_date">ଶିବିର ତିଥି</string>
+        <string name="ctaract">ମୋତିଆ ବିନ୍ଦୁ</string>
+        <string name="continuee">ଚାଲୁ ରଖ</string>
+        <string name="cured"> ଆରୋଗ୍ୟ ଲାଭ</string>
+        <string name="closed">ବନ୍ଦ କରିବା</string>
+        <string name="conversation"> ବାର୍ତ୍ତାଳାପ</string>
+        <string name="cleanliness_maleria_nutritions_vaccination"> ସଫା ସୁତୁରା, ମ୍ୟାଲେରିଆ, ପୁଷ୍ଟି, , ଟୀକାକରଣ</string>
+        <string name="chhata">ଛତା</string>
+        <string name="cut_heart_attack_snake_bite">କଟା, ହୃଦ୍ ଘାତ, ସାପ କାମୁଡା</string>
+        <string name="dateE">ତାରିଖ</string>
+        <string name="distance">ଦୂରତା</string>
+        <string name="edit"> ସଂଶୋଧନ</string>
+        <string name="eye_infect">ଆଖି ସଂକ୍ରମଣ</string>
+        <string name="emegency_resp_trainig">ଆପାତ କାଳୀନ ତାଲିମ </string>
+        <string name="every_month_3_jagran_program">ପ୍ରତି ମାସ 3 ଜାଗରଣ କାର୍ଯ୍ୟକ୍ରମ</string>
+        <string name="filter">ଫିଲ୍ଟର ବ୍ୟବହାର</string>
+        <string name="family_contact_50_per_month">ପରିବାର ସମ୍ପର୍କ 50 ପ୍ରତି ମାସ</string>
+        <string name="first">ପ୍ରଥମ</string>
+        <string name="empty_label"> ଖାଲି ନାମ ପଟି</string>
+        <string name="girls"> ବାଳିକା</string>
+        <string name="govt_hopital">ସରକାରୀ ଡାକ୍ତଖାନା</string>
+        <string name="head_name"> ମୁଖିଆ ନାମ</string>
+        <string name="heart_attack">ହୃଦ୍ ଘାତ </string>
+        <string name="householder">ପାରିବାରିକ</string>
+        <string name="health">ସ୍ବାସ୍ଥ୍ୟ</string>
+        <string name="health_village_soakpit_water_treatment">ସ୍ୱାସ୍ଥ୍ୟ, ଗ୍ରାମ, ସୋକ୍ଟା ଗାଢା, ପାଣି ଚିକିତ୍ସା</string>
+        <string name="infection_error">ସଂକ୍ରମଣ ତୃଟି</string>
+        <string name="incident_record_keeping">ଘଟଣା ରେକର୍ଡ ରଖିବା</string>
+        <string name="inspect_date">ତଦାରଖ ତିଥି</string>
+        <string name="incident_recordkeeping"> ଘଟଣା ରେକର୍ଡ ରଖିବା</string>
+        <string name="in_progress">ଅଗ୍ରଗତି କରୁଛି</string>
+        <string name="jagaran_topic_1">ଜାଗରଣ ବିଷୟ 1</string>
+        <string name="kids">ଶିଶୁ</string>
+        <string name="kacha_pakka_soakpit_compost_pit">କଚ। / ପକା, ସୋକ୍ତା ଗଢା , ଜୈବ ଖାତ</string>
+        <string name="login">ଲଗିନ୍</string>
+        <string name="maleria"> ମ୍ୟାଲେରିଆ</string>
+        <string name="maternal_saftey">ମାତୃ ନିରାପତ୍ତା</string>
+        <string name="mild">ଅଳ୍ପ</string>
+        <string name="moderate">ମଧ୍ୟମ</string>
+        <string name="medicine_patation">ଔଷଧୀୟ ଗଛ ରୋପଣ</string>
+        <string name="missing_date">ସଭା ତିଥି</string>
+        <string name="mideinal_palnts"> ଔଷଧୀୟ ଗଛ</string>
+        <string name="nutrition">ପୋଷଣ</string>
+        <string name="no_of_fam">ପରିବାର ସଂଖ୍ୟା</string>
+        <string name="no_of_male">ପୁରୁଷ ସଂଖ୍ୟା</string>
+        <string name="no_of_female">ମହିଳା ସଂଖ୍ୟା</string>
+        <string name="no_of_child"> ପିଲା ସଂଖ୍ୟା</string>
+        <string name="new_ticket"> ନୂଆ ଟିକେଟ</string>
+        <string name="no_of_doc"> ଡାକ୍ତର ସଂଖ୍ୟା</string>
+        <string name="no_of_people_use_toilet">ପାଇଖାନା ବ୍ୟବହାର କରୁଥିବା ଲୋକ ସଂଖ୍ୟା</string>
+        <string name="nutrition_plantation">ପୋଷଣ ବୃକ୍ଷ ରୋପଣ</string>
+        <string name="not_cured">ସୁସ୍ଥ ନ ହେବା</string>
+        <string name="no_of_participant_inposter">ପୋଷ୍ଟର ପ୍ରଦର୍ଶନ ରେ ଉପସ୍ଥିତ ଲୋକ ସଂଖ୍ୟା</string>
+        <string name="night_stay">ରାତ୍ରୀ ରହଣୀ</string>
+        <string name="otp">ଓ ଟି ପି</string>
+        <string name="open">ଖୋଲିବା</string>
+        <string name="purpose_of_visit">ପରିଦର୍ଶନ ର ଲକ</string>
+        <string name="privat_hospital">ଘରୋଇ ଡାକ୍ତଖାନା</string>
+        <string name="plz_add_famil">ଦୟାକରି ପରିବାର ଯୋଗ କର</string>
+        <string name="prblem">ସମସ୍ୟା</string>
+        <string name="plz_add_child">ଦୟାକରି ଶିଶୁ ଙ୍କୁ ଯୋଗ କର</string>
+        <string name="plz_add_chil">ଦୟାକରି ଶିଶୁ ଙ୍କୁ ଯୋଗ କର</string>
+        <string name="plz_add_fami">ଦାୟକରି ପରିବାର ଯୋଗ କର</string>
+        <string name="pat_name">ରୋଗୀ ର ନାମ</string>
+        <string name="prscription">ଔଷଧ ଚିଠା</string>
+        <string name="poster_display_four_days_a_month_per_week"> ପୋଷ୍ଟର ପ୍ରଦର୍ଶନ 4 ଥର ପ୍ରତି ମାସରେ / ପ୍ରତି ସପ୍ତାହ</string>
+        <string name="plantation_of_vanaushadhi_samplings_per_family">ପରିବାର ରେ ବନୌଷଧି ବୃକ୍ଷ ରୋପଣ ସଂଖ୍ୟା</string>
+        <string name="rajni">ରଜନୀ</string>
+        <string name="result">ଫଳାଫଳ</string>
+        <string name="refreed"> ପଠାଇବା</string>
+        <string name="remark">ମନ୍ତବ୍ୟ</string>
+        <string name="reading_"> ପଢ଼ିବା</string>
+        <string name="refraction_errro">ପ୍ରତିସରଣ ତ୍ରୁଟି</string>
+        <string name="resend_otp">OTP ଆଉ ଥରେ ପଠା</string>
+        <string name="reply_ticket"> ଟିକେଟ ଉତ୍ତର</string>
+        <string name="mob_verification">ମୋବାଇଲ  ଭେରିଫିକେସନ </string>
+        <string name="mob_no">ମୋବାଇଲ ନମ୍ବର</string>
+        <string name="start_trip"> ଯାତ୍ରା ଆରମ୍ଭ କର</string>
+        <string name="snake_bite">ସାପ କାମୁଡା</string>
+        <string name="sevre">ଗୁରୁତର</string>
+        <string name="sanyojika_na"> ସଂଯୋଜିକା ନାମ</string>
+        <string name="sanyojak_sonyojika">ସଂଯୋଜକ/ ସଂଜୋଜିକା</string>
+        <string name="subj">ବିଷୟ</string>
+        <string name="select"> ବାଛିବା</string>
+        <string name="select_your_year">ତୁମର ବର୍ଷ ନିରୂପଣ କର  </string>
+        <string name="select_village">ଗ୍ରାମ ନିରୂପଣ</string>
+        <string name="start_date">ଆରମ୍ଭ ତାରିଖ</string>
+        <string name="testing"> ପରୀକ୍ଷା</string>
+        <string name="treament_type"> ଚିକିତ୍ସା ପ୍ରକାର</string>
+        <string name="trainig_of_various_record"> ବିଭିନ ରେକର୍ଡ ରଖିବାର ତାଲିମ</string>
+        <string name="ticket_support"> ଟିକେଟ ସମର୍ଥନ</string>
+        <string name="file_3_mb">ଫାଇଲ ସାଇଜ 3MB ରୁ ଅଧିକ ହେବା ଉଚିତ୍ ନୁହେଁ</string>
+        <string name="test">ପରୀକ୍ଷା</string>
+        <string name="total"> ସମୁଦାୟ</string>
+        <string name="treatment_type">ଚିକିତ୍ସା ପ୍ରକାର</string>
+        <string name="total_cured_pat">ସମୁଦାୟ ଆରୋଗ୍ୟ ହୋଇଥିବା ରୋଗୀ ସଂଖ୍ୟା</string>
+        <string name="tarining_for_various"> ବିଭିନ୍ନ ପ୍ରକାର ତାଲିମ</string>
+        <string name="tree_planting">ବୃକ୍ଷ ରୋପଣ</string>
+        <string name="testt"> ପରୀକ୍ଷା</string>
+        <string name="total_member_meeting">ବୈଠକ ରେ ସମୁଦାୟ ସଦସ୍ୟ ସଂଖ୍ୟା</string>
+        <string name="ticket_info">ଟିକେଟ ତଥ୍ୟ</string>
+        <string name="tck_id">ଟିକେଟ ID</string>
+        <string name="this_month">ଏଇ ମାସ</string>
+        <string name="till_date">ଆଜି ପର୍ଯ୍ୟନ୍ତ</string>
+        <string name="upload_photo">ଛବି ଅପଲୋଡ଼</string>
+        <string name="unconsc"> ଅଚେତ</string>
+        <string name="vidhalaya_contact_ekal_vidhalaya_4_days_other_vidhalaya_4_days">ବିଦ୍ୟାଳୟ ସମ୍ପର୍କ - ଏକଲ ବିଦ୍ୟାଳୟ 4 ଦିନ, ଅନ୍ୟ ବିଦ୍ୟାଳୟ 4 ଦିନ</string>
+        <string name="vaccination">ଟୀକାକରଣ</string>
+        <string name="vision_defect"> ଦୃଷ୍ଟି ଦୋଷ</string>
+        <string name="village_visit_details">ଗ୍ରାମ ପରିଦର୍ଶନ ର ସବିଶେଷ ବିବରଣୀ</string>
+        <string name="vilage_visit">ଗ୍ରାମ ପରିଦର୍ଶନ</string>
+        <string name="vidyalay_visit">ବିଦ୍ୟାଳୟ ପରିଦର୍ଶନ</string>
+        <string name="warni_massg">ଚେତାବନୀ - ଥରେ କେବଳ ଚେକ୍ ଇନ୍ ଓ ଚେକ୍ ଆଉଟ୍ ହୋଇ ପାରିବ</string>
+        <string name="wall_writing">କାନ୍ଥ ଲିଖନ</string>
+        <string name="we_will_send_otp_mssg">ଆମେ ତୁମକୁ ଥରେ କେବଳ OTP ଓ ପାସ ୱାର୍ଡ ପଠାଇବୁ</string>
+        <string name="o_rs"> ଟ 0.00</string>
+        <string name="total_member_count">ସମୁଦାୟ ସଦସ୍ୟ ଗଣନା</string>
+        <string name="mobno">ଫୋନ୍ ନମ୍ବର </string>
+        <string name="no_prev_img">ପୂର୍ବ ଛବି ନାହିଁ </string>
+        <string name="last_image">ଶେଷ ଛବି ଠିକ୍ ସମୟରେ ପ୍ରଦର୍ଶିତ ହୋଇଛି </string>
+        <string name="continues">ଚାଲୁ ରଖ </string>
+        <string name="select_your_preferred_language">ଭାଷା ଚୟନ କରନ୍ତୁ </string>
+        <string name="language_preference_message">ଦୟାକରି ଏକ ଭାଷା ଚୟନ କରନ୍ତୁ ଯାହାକି ପଢ଼ି ପାରିବେ ଓ ବୁଝି ପାରିବେ </string>
+        <string name="change_language">ଭାଷା ପରିବର୍ତ୍ତନ କରନ୍ତୁ </string>
+        <!-- ////Array List DATA-->
+        <string name="tckw">T- ପାଇଖାନା / nC - କଚରା ଗାତ / କଚା / ପକ୍କା ସୋକ ପିଟ </string>
+        <string name="village_list">ଗ୍ରାମ ତାଲିକା </string>
+        <string name="disease_prevention_list">ରୋଗ ନିବାରଣ ତାଲିକା </string>
+        <string name="ayurvedic_treatment_list">ଆୟର୍ବେଦିକ ଚିକିତ୍ସା ତାଲିକା </string>
+        <string name="samiti_meeting_list">ସମିତି ବୈଠକ ତାଲିକା </string>
+        <string name="search_coordinator">ସଂଯୋଜକ ଖୋଜ </string>
+
+        <string name="village_visit_list">ଗ୍ରାମ ପ୍ରଦର୍ଶନ ତାଲିକା </string>
+        <string name="arogya_camp_list">ଆରୋଗ୍ୟ ଶିବିର ତାଲିକା </string>
+        <string name="referred">ପଠାଇବା </string>
+        <string name="inspection_stay_list">ପରିଦର୍ଶନ ସ୍ଥଗିତ ତାଲିକା </string>
+        <string name="update_owner">ମାଲିକ ସବିଶେଷ ତଥ୍ୟ ଅପଡେଟ </string>
+        <string name="add_owner_details">ମାଲିକ ସବିଶେଷ ତଥ୍ୟ ଯୋଗ </string>
+        <string name="personal_hygiene_list">ବ୍ୟକ୍ତିଗତ ସ୍ବଚ୍ଛତା ତାଲିକା </string>
+        <string name="social_sanitation_list">ସାମାଜିକ ସ୍ବଚ୍ଛତା ତାଲିକା </string>
+        <string name="panchva">ପଞ୍ଚଭ </string>
+        <string name="family_list">ପରିବାର ତାଲିକା </string>
+        <string name="malnutrition_checkup_list">ପୁଷ୍ଟିହୀନତା ତଦାରଖ ତାଲିକା </string>
+        <string name="malnutrition_checkup_result">ପୁଷ୍ଟିହୀନତା ତଦାରଖ ଫଳାଫଳ </string>
+        <string name="first_aid_list">ପ୍ରାଥମିକ ଚିକିତ୍ସା ତାଲିକା </string>
+        <string name="eye_van_list">ନେତ୍ର ବାହନ ତାଲିକା </string>
+        <string name="eye_screen_list">ନେତ୍ର ତଦାରଖ ତାଲିକା </string>
+        <string name="view_eye_screen">ନେତ୍ର ପରଦା ଦୃଶ୍ୟ </string>
+        <string name="view_samiti_details">ସମିତି ର ସବିଶେଷ ତଥ୍ୟ </string>
+        <string name="update_samiti_details">ସମିତି ର ସବିଶେଷ ଅପଡେଟ </string>
+        <string name="update_animea">ରକ୍ତ ହୀନତା ର ସବିଶେଷ ତଦାରଖ ଫଳାଫଳ</string>
+        <string name="add_member">ସଦସ୍ୟ ସଂଯୋଗିକରଣ </string>
+        <string name="language">ଭାଷା </string>
+        <string name="dash1">ଗ୍ରାମ ଓ ପରିବାର </string>
+        <string name="dash2">ପ୍ରତିଷେଧକ </string>
+        <string name="dash3">ରୋଗ ପ୍ରତିଷେଧକ </string>
+        <string name="dash4">ପୁଷ୍ଟିହୀନତା </string>
+        <string name="dash5">ଚେରମୂଳି ଉପଚାର </string>
+        <string name="dash6">ପ୍ରାଥମିକ ଚିକିତ୍ସ।</string>
+        <string name="dash7">ନେତ୍ର ବାହନ </string>
+        <string name="dash8">ସମିତି ବୈଠକ </string>
+        <string name="dash9">ପୋଷ୍ଟର ପ୍ରଦର୍ଶନ </string>
+        <string name="dash10">ଗ୍ରାମ ପରିଦର୍ଶନ </string>
+        <string name="dash11">ଆରୋଗ୍ୟ ଶିବିର </string>
+        <string name="dash12">ଜାଗରଣ କାର୍ଯ୍ୟକ୍ରମ </string>
+        <string name="dash13">ତଦାରଖ ଦିନ </string>
+        <string name="title">ଟାଇଟଲ </string>
+        <string name="ticket_desc">କୌଣସି ସମସ୍ୟା ( ଦୟାକରି ଉଲ୍ଲେଖ କର )</string>
+        <string name="animea_checkup_list">ରକ୍ତହୀନତା ତଦାରଖ ତାଲିକା </string>
+        <string name="children_list">ପିଲା ମାନଙ୍କ ତାଲିକା </string>
+        <string name="family_children_list">ପରିବାର ପିଲା ତାଲିକା </string>
+        <string name="personal_hygeine_list">ବ୍ୟକ୍ତିଗତ ସ୍ବଚ୍ଛତା ତାଲିକା</string>
+        <string name="malnutrition_checkup_add">ପୁଷ୍ଟିହୀନ ତଦାରଖ ଯୋଗ </string>
+        <string name="malnutrition_checkup_head">ପୁଷ୍ଟିହୀନ ତଦାରଖ ମୁଖ୍ୟ </string>
+        <string name="malnutrition_checkup_member">ପୁଷ୍ଟିହୀନ ତଦାରଖ ସଦସ୍ୟ </string>
+        <string name="enter_date">ଦୟାକରି ତିଥି ଉଲ୍ଲେଖ କର </string>
+        <string name="choose_malnutrition_yes_no">କୁପୋଷଣ ତଦାରଖ ପସନ୍ଦ ହଁ / ନାଁ </string>
+        <string name="plz_select_mid_arm">ଦୟାକରି ମଧ୍ୟ ବାହୁ ର ମାପ ବାଛ  </string>
+        <string name="women_list">ମହିଳା ସଂଖ୍ୟା </string>
+        <string name="ayurvedic_treat_list">ଆୟର୍ବେଦିକ ଚିକିତ୍ସ। ତାଲିକା </string>
+        <string name="medicine_garden_list">ଔଷଧ ଉଦ୍ୟାନ ତାଲିକା </string>
+        <string name="add_some_plant">କିଛି ବୃକ୍ଷ ସଂଯୋଗ </string>
+        <string name="add_plant_count">ବୃକ୍ଷ ଗଣତି ସଂଯୋଗ </string>
+        <string name="add_plant_images">କିଛି ବୃକ୍ଷ ଛବି ସଂଯୋଗ </string>
+        <string name="disposal_of_water">କଚା / ପକା ସୋକ ପିଟ </string>
+        <string name="other">ଅନ୍ୟ</string>
+        <string name="guest">ଅତିଥି </string>
+        <string name="add_image">ଛବି ସଂଯୋଗ </string>
+        <string name="plz_mark_attendace_first">ପ୍ରଥମେ ତୁମର ଉପସ୍ଥିତି ସୂଚିତ କର </string>
+        <string name="sevavriti">ସେବବ୍ରତି </string>
+        <string name="plz_wait_you_shuold">ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ/ ଆପଣ ଏକ ଏସ ଏମ ଏସ କୋଡ ପାଇବ </string>
+        <string name="task_details">କାର୍ଯ୍ୟ ର ସବିଶେଷ ତଥ୍ୟ</string>
+        <string name="no_child_found">ମନୋନୀତ ପରିବାର ପାଇଁ କ member ଣସି ସଦସ୍ୟ ପାଇଲେ ନାହିଁ |</string>
+        <string name="sanch_name">ନାମ ଖୋଜ </string>
+        <string name="count">ଗଣନା କରିବା </string>
+
+    <string name="wall_write">କାନ୍ଥ ଲେଖିବା |</string>
+    <string name="filterUses">ଫିଲ୍ଟର ବ୍ୟବହାର |</string>
+    <string name="task_id">କାର୍ଯ୍ୟ ID:</string>
+    <string name="view">ଦର୍ଶନ</string>
+    <string name="eye_screen">"ଆଖି ସ୍କ୍ରିନ୍"</string>
+    <string name="add_eye_screening">ଆଖି ସ୍କ୍ରିନିଂ ଯୋଡନ୍ତୁ |</string>
+    <string name="view_member">ସଦସ୍ୟଙ୍କୁ ଦେଖ |</string>
+    <string name="end_date">ସମାପ୍ତ ତାରିଖ</string>
+    <string name="health_clean_rally">ସ୍ୱାସ୍ଥ୍ୟ ଏବଂ ପରିଷ୍କାର ପରିଚ୍ଛନ୍ନତା ଜାଗୁରା ରାଲି |</string>
+    <string name="gkv_report">GKV ରିପୋର୍ଟ</string>
+    <string name="try_again">ଦୟାକରି ପୁଣିଥରେ ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="opps_try_again">ଓ ops !! ଅଜ୍ଞାତ ତ୍ରୁଟି ଘଟିଗଲା | ଦୟାକରି ପୁଣିଥରେ ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="complete">ସଂପୂର୍ଣ୍ଣ</string>
+    <string name="not_complete">ସଂପୂର୍ଣ୍ଣ ନୁହେଁ</string>
+    <string name="pateint_type">ରୋଗୀ ପ୍ରକାର</string>
+    <string name="member">ସଦସ୍ୟ</string>
+
+    <string name="select_vision_defect">ଦର୍ଶନ ତ୍ରୁଟି ଚୟନ କରନ୍ତୁ |</string>
+    <string name="language_changed_success">ଭାଷା ସଫଳତାର ସହିତ ବଦଳିଗଲା |</string>
+    <string name="failed_slect_language">ଭାଷା ପରିବର୍ତ୍ତନ କରିବାରେ ବିଫଳ | ଦୟାକରି ପୁଣିଥରେ ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="enter_ticket_name">ଦୟାକରି ଟିକେଟ୍ ନାମ ପ୍ରବେଶ କରନ୍ତୁ |</string>
+    <string name="enter_ticket_remark">ଦୟାକରି ଟିକେଟ୍ ଟିପ୍ପଣୀ ପ୍ରବେଶ କରନ୍ତୁ |</string>
+    <string name="logout_mmsg">ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଏହି ଆପ୍ ବନ୍ଦ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?</string>
+    <string name="close">ବନ୍ଦ</string>
+    <string name="second">ଦ୍ୱିତୀୟ</string>
+    <string name="download">ଡାଉନଲୋଡ୍ ହୋଇଛି |</string>
+    <string name="id_not_found">Id ମିଳିଲା ନାହିଁ!</string>
+    <string name="plz_complete_form">ଦୟାକରି ସମ୍ପୂର୍ଣ୍ଣ ଫର୍ମ ପୂରଣ କରନ୍ତୁ |</string>
+    <string name="gender_choose">ଲିଙ୍ଗ ବାଛନ୍ତୁ!</string>
+    <string name="marital_status_choose">ବ ital ବାହିକ ସ୍ଥିତି ଚୟନ କରନ୍ତୁ |</string>
+    <string name="relation_choose">ସମ୍ପର୍କ ଚୟନ କରନ୍ତୁ |</string>
+    <string name="occupation_choose">ବୃତ୍ତି ଚୟନ କରନ୍ତୁ |</string>
+    <string name="no_capture_image">କ image ଣସି ପ୍ରତିଛବି କ୍ୟାପଚର ନାହିଁ!</string>
+    <string name="fill_detail">ଦୟାକରି ବିବରଣୀଗୁଡିକ ପୁରଣ କରନ୍ତୁ |</string>
+    <string name="search_box_empty">ସନ୍ଧାନ ବାକ୍ସ ଖାଲି |</string>
+    <string name="cured_no">ନା। ଆରୋଗ୍ୟ ରୋଗୀ</string>
+    <string name="input_grade">ଇନପୁଟ୍ ଗ୍ରେଡ୍: A / B / C |</string>
+    <string name="select_topic">ବିଷୟ ଚୟନ କରନ୍ତୁ!</string>
+    <string name="login_success">ଲଗଇନ୍ ସଫଳତା |</string>
+    <string name="otp_reneter">ଦୟାକରି ବ valid ଧ OTP ପ୍ରବେଶ କରନ୍ତୁ |</string>
+    <string name = "family_visit"> ପରିବାର ପରିଦର୍ଶନ </string>
+    <string name = "family_visit_count"> ପରିବାର ପରିଦର୍ଶନ ତଥ୍ୟ </string>
+
+
+    <string name = "toilet_usage_awrness"> ଶ et ଚାଳୟ ବ୍ୟବହାର ସଚେତନତା </string>
+
+    <string name = "inspection_report"> ଯାଞ୍ଚ ରିପୋର୍ଟ </string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

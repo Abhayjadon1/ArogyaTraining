@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.inventics.ekalarogya.training">
+    package="com.ispl.ekalarogya.training">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -21,10 +21,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
     <permission
-        android:name="com.inventics.ekalarogya.permission.MAPS_RECEIVE"
+        android:name="com.ispl.ekalarogya.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.inventics.ekalarogya.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.ispl.ekalarogya.permission.MAPS_RECEIVE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- Required OpenGL ES 2.0. for Maps V2 -->
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -42,7 +42,7 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name=".app_base.ArogyaApplication"
+        android:name="com.ispl.ekalarogya.training.app_base.ArogyaApplication"
         android:allowBackup="true"
         android:defaultToDeviceProtectedStorage="true"
         android:fullBackupContent="false"
@@ -59,167 +59,167 @@
 
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".main.GKVReport"
+            android:name="com.ispl.ekalarogya.training.main.GKVReport"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.medprep.VanAushadhiAddMember"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.medprep.VanAushadhiAddMember"
             android:exported="false" />
         <activity
-            android:name=".main.dashboardFragments.TaskDetails"
+            android:name="com.ispl.ekalarogya.training.main.dashboardFragments.TaskDetails"
             android:exported="false" />
         <activity
-            android:name=".main.dashboardFragments.TaskActivity"
+            android:name="com.ispl.ekalarogya.training.main.dashboardFragments.TaskActivity"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.eye.eyescreening.EyeScreeningUpdate"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.eye.eyescreening.EyeScreeningUpdate"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".ScrollingActivity" -->
         <!-- android:exported="false" -->
         <!-- android:label="@string/title_activity_scrolling" -->
         <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
         <activity
-            android:name=".main.dashotheractivity.eye.eyevan.EyeVanAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.eye.eyevan.EyeVanAdd"
             android:exported="false" />
         <activity
-            android:name=".main.support_ticket.SupportTicketActivity"
+            android:name="com.ispl.ekalarogya.training.main.support_ticket.SupportTicketActivity"
             android:exported="false" />
         <activity
-            android:name=".main.support_ticket.SupportTicketDetailActivity"
+            android:name="com.ispl.ekalarogya.training.main.support_ticket.SupportTicketDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".main.support_ticket.AddSupportTicketActivity"
+            android:name="com.ispl.ekalarogya.training.main.support_ticket.AddSupportTicketActivity"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.medicinegarden.MedicineGardenFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.medicinegarden.MedicineGardenFamily"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.inspectionday.InspectionDayAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.inspectionday.InspectionDayAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.jagaranprogram.JagaranProgramAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.jagaranprogram.JagaranProgramAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.arogyacamp.ArogyaCampAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.arogyacamp.ArogyaCampAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.villagevisit.VillageVisitAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.villagevisit.VillageVisitAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.posterdisplay.PosterDisplayAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.posterdisplay.PosterDisplayAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.eye.eyescreening.EyeScreeningAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.eye.eyescreening.EyeScreeningAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.eye.eyescreening.EyeScreening"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.eye.eyescreening.EyeScreening"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.eye.eyevan.EyeVan"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.eye.eyevan.EyeVan"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.samitimeeting.SamitiMeetingAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.samitimeeting.SamitiMeetingAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.firstaid.FirstAidFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.firstaid.FirstAidFamily"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.firstaid.FirstAidAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.firstaid.FirstAidAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.medprep.VanAushadhiAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.medprep.VanAushadhiAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.medicinegarden.AddMedicineGarden"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.medicinegarden.AddMedicineGarden"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.medicinegarden.MedicineGarden"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.medicinegarden.MedicineGarden"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.medicinegarden.SingleFamilyGarden"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.medicinegarden.SingleFamilyGarden"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.medprep.VanAushadhi"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.medprep.VanAushadhi"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.ayurvedic.AyurvedicAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.ayurvedic.AyurvedicAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.ayurvedic.HerbalRemediesList"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.ayurvedic.HerbalRemediesList"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.malnutrition.malnutrion.MalnutrionCheckupAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.malnutrition.malnutrion.MalnutrionCheckupAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.malnutrition.malnutrion.MalnutritionFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.malnutrition.malnutrion.MalnutritionFamily"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.malnutrition.animea.AnemiaFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.malnutrition.animea.AnemiaFamily"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.malnutrition.animea.AnemiaCheckupAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.malnutrition.animea.AnemiaCheckupAdd"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.deseaseprevention.AddDiseaseVillage"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.deseaseprevention.AddDiseaseVillage"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.malnutrition.animea.AnemiaCheckup"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.malnutrition.animea.AnemiaCheckup"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.malnutrition.malnutrion.MalnutritionCheckup"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.malnutrition.malnutrion.MalnutritionCheckup"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.preventives.socialSanitisation.SocialSanitisationFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.socialSanitisation.SocialSanitisationFamily"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.preventives.socialSanitisation.SocialSanitiasationCheck"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.socialSanitisation.SocialSanitiasationCheck"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.preventives.hygiene.PersonalHygineFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.hygiene.PersonalHygineFamily"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.preventives.hygiene.PersonalHygineCheckup"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.hygiene.PersonalHygineCheckup"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.family.AddFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.family.AddFamily"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.family.AddFamilyMember"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.family.AddFamilyMember"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.herbalremedies.HerbalRemedies"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.herbalremedies.HerbalRemedies"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.firstaid.FirstAid"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.firstaid.FirstAid"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.eye.EyeCheckup"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.eye.EyeCheckup"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.samitimeeting.SamitiMeeting"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.samitimeeting.SamitiMeeting"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.posterdisplay.PosterDisplay"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.posterdisplay.PosterDisplay"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.villagevisit.VillageVisit"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.villagevisit.VillageVisit"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.arogyacamp.ArogyaCamp"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.arogyacamp.ArogyaCamp"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.jagaranprogram.JagranProgram"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.jagaranprogram.JagranProgram"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.inspectionday.InspectionDay"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.inspectionday.InspectionDay"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.malnutrition.Malnutrition"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.malnutrition.Malnutrition"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.preventives.Preventive"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.Preventive"
             android:exported="false" />
         <activity
-            android:name=".main.dashotheractivity.family.VillageFamily"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.family.VillageFamily"
             android:exported="false" />
 
         <uses-library
@@ -227,7 +227,7 @@
             android:required="false" />
 
         <activity
-            android:name=".main.SplashActivity"
+            android:name="com.ispl.ekalarogya.training.main.SplashActivity"
             
             android:exported="true">
             <intent-filter>
@@ -237,41 +237,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".language_change.LanguageChooserActivity"
+            android:name="com.ispl.ekalarogya.training.language_change.LanguageChooserActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".user_auth.LoginActivity"
+            android:name="com.ispl.ekalarogya.training.user_auth.LoginActivity"
 
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".user_auth.OTPActivity"
+            android:name="com.ispl.ekalarogya.training.user_auth.OTPActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.ispl.ekalarogya.training.main.MainActivity"
             android:screenOrientation="portrait"
 
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".main.dashotheractivity.preventives.hygiene.PersonalHygine"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.hygiene.PersonalHygine"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".main.dashotheractivity.preventives.familyvisit.FamilyVisitList"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.familyvisit.FamilyVisitList"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".main.dashotheractivity.preventives.familyvisit.FamilyVisitAdd"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.familyvisit.FamilyVisitAdd"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".main.dashotheractivity.preventives.socialSanitisation.SocialSanitisation"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.preventives.socialSanitisation.SocialSanitisation"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".main.dashotheractivity.deseaseprevention.DiseasePrevention"
+            android:name="com.ispl.ekalarogya.training.main.dashotheractivity.deseaseprevention.DiseasePrevention"
             android:exported="false"
             android:screenOrientation="portrait" /> <!-- <activity android:name=".main.dashotheractivity.preventives.SocialSanitisation" -->
         <!-- android:exported="false" -->
@@ -285,17 +285,17 @@
         <!-- android:screenOrientation="portrait" -->
         <!-- android:windowSoftInputMode="stateHidden" /> -->
         <service
-            android:name=".services.MyIntentService"
+            android:name="com.ispl.ekalarogya.training.services.MyIntentService"
             android:exported="false" />
         <service
-            android:name=".fcm.FirebaseMessageService"
+            android:name="com.ispl.ekalarogya.training.fcm.FirebaseMessageService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <service
-            android:name=".services.BgServ"
+            android:name="com.ispl.ekalarogya.training.services.BgServ"
             android:exported="false" />
 
         <meta-data
@@ -307,7 +307,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.inventics.ekalarogya.training.file_provider"
+            android:authorities="com.ispl.ekalarogya.training.file_provider"
             android:exported="false"
             android:grantUriPermissions="true"
             android:syncable="true"
@@ -321,7 +321,7 @@
 
 <!--        <provider-->
 <!--            android:name="androidx.core.content.FileProvider"-->
-<!--            android:authorities="com.inventics.salaryslipEmployee.fileprovider"-->
+<!--            android:authorities="com.ispl.salaryslipEmployee.fileprovider"-->
 <!--            android:exported="false"-->
 <!--            android:grantUriPermissions="true"-->
 <!--            tools:replace="android:authorities">-->
@@ -332,5 +332,22 @@
 <!--        </provider>-->
 
     </application>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </manifest>

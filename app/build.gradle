@@ -36,7 +36,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.inventics.ekalarogya.training"
+        applicationId "com.ispl.ekalarogya.training"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode generateVersionCode()
@@ -103,7 +103,7 @@ android {
     lint {
         checkReleaseBuilds false
     }
-    namespace 'com.inventics.ekalarogya.training'
+    namespace 'com.ispl.ekalarogya.training'
 //    buildFeatures {
 //        viewBinding  true
 //    }

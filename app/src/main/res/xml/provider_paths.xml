@@ -2,7 +2,7 @@
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
     <external-path
         name="app_images"
-        path="Android/data/com.inventics.ekalarogya.training/files/Pictures/IonTrack" />
+        path="Android/data/com.ispl.ekalarogya.training/files/Pictures/IonTrack" />
     <external-path
         name="external_files"
         path="." />
